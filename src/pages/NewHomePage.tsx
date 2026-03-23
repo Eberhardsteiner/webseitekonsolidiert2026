@@ -274,7 +274,7 @@ function NewHomePage() {
             – bevor es der Markt tut.
           </h1>
           <p className="text-lg font-light leading-relaxed text-white/60 max-w-2xl mx-auto">
-            Hier Texte einfügen wie bei Schäuble?
+            Unser 4C-Modell macht diesen Mut systematisch: Es verbindet Corporate Strategy, Culture & Change, Code of Conduct und Competences zu einem Navigationsrahmen für Organisationen im Umbruch.
           </p>
         </div>
 
