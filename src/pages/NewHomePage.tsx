@@ -274,12 +274,12 @@ function NewHomePage() {
             – bevor es der Markt tut.
           </h1>
           <div className="text-lg font-light leading-relaxed text-white/60 max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-md">
-              <div>
-                <p className="mb-sm">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
+              <div className="space-y-sm">
+                <p>
                   Unser 4C-Modell macht diesen Mut systematisch: Es verbindet Corporate Strategy, Culture & Change, Code of Conduct und Competences zu einem Navigationsrahmen für Organisationen im Umbruch. Disruption & Veränderung gestalten
                 </p>
-                <p className="mb-sm">
+                <p>
                   Wie bereite ich meine Organisation auf Umbrüche vor, die noch niemand kommen sieht?
                   Disruption trifft die, die sich für unverwundbar halten.
                 </p>
@@ -287,30 +287,22 @@ function NewHomePage() {
                   Viele Organisationen investieren in Innovationsprogramme, agile Methoden und digitale Transformation. Dennoch scheitern Veränderungsprozesse regelmäßig – nicht an der Strategie, sondern an der Fähigkeit, Gewohntes loszulassen. Wer Disruption nur als technologisches Phänomen begreift, übersieht ihren eigentlichen Hebel: die Bereitschaft von Führungskräften, das eigene Geschäftsmodell radikal zu hinterfragen.
                 </p>
               </div>
-              
-
- <div>
+              <div className="space-y-sm">
                 <p>
-                 Vertrauen ist keine weiche Währung – es ist der härteste Wettbewerbsvorteil, den eine Organisation aufbauen kann. In einer Welt, in der Künstliche Intelligenz Entscheidungsprozesse verändert, Disruption ganze Geschäftsmodelle über Nacht infrage stellt und der Ruf nach Perspektivenvielfalt lauter wird, braucht Führung ein neues Fundament. 
+                 Vertrauen ist keine weiche Währung – es ist der härteste Wettbewerbsvorteil, den eine Organisation aufbauen kann. In einer Welt, in der Künstliche Intelligenz Entscheidungsprozesse verändert, Disruption ganze Geschäftsmodelle über Nacht infrage stellt und der Ruf nach Perspektivenvielfalt lauter wird, braucht Führung ein neues Fundament.
                 </p>
-              </div>
-               <div>
                 <p>
                 Trustful Leadership und Female Leadership sind dabei keine getrennten Agenden, sondern zwei Seiten derselben Erkenntnis: Organisationen, die Vertrauen systematisch aufbauen, schaffen genau die Bedingungen, unter denen diverse Führung wirksam wird – und diverse Führungsteams erzeugen genau die Entscheidungsqualität, die Vertrauen rechtfertigt. Dieser Kreislauf entsteht nicht zufällig. Er entsteht, wenn Strategie, Kultur, Haltung und Kompetenz gemeinsam gedacht werden – und genau das ist der Kern unseres 4C-Modells.
                 </p>
-              </div>
-
-<div>
                 <p>
                   Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
                 </p>
               </div>
-              
             </div>
-            <div className="text-center">
+            <div className="text-center mt-xl">
               <button
                 type="button"
-                className="text-sm text-accent hover:text-accent-light transition-colors font-medium"
+                className="px-8 py-3 bg-accent/20 text-accent hover:bg-accent hover:text-white transition-all font-semibold text-base border-2 border-accent uppercase tracking-[0.1em]"
               >
                 Weiterlesen
               </button>
