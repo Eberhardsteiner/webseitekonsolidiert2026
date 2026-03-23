@@ -281,7 +281,7 @@ function NewHomePage() {
                 </p>
                 <p className="mb-sm">
                   Wie bereite ich meine Organisation auf Umbrüche vor, die noch niemand kommen sieht?
-                  Disruption trifft selten die Unvorbereiteten zuerst – sie trifft die, die sich für unverwundbar halten.
+                  Disruption trifft die, die sich für unverwundbar halten.
                 </p>
                 <p>
                   Viele Organisationen investieren in Innovationsprogramme, agile Methoden und digitale Transformation. Dennoch scheitern Veränderungsprozesse regelmäßig – nicht an der Strategie, sondern an der Fähigkeit, Gewohntes loszulassen. Wer Disruption nur als technologisches Phänomen begreift, übersieht ihren eigentlichen Hebel: die Bereitschaft von Führungskräften, das eigene Geschäftsmodell radikal zu hinterfragen.
