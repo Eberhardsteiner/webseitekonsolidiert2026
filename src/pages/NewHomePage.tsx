@@ -263,108 +263,109 @@ function NewHomePage() {
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_25%_75%,rgba(13,148,136,0.1)_0%,transparent_55%),radial-gradient(ellipse_at_75%_25%,rgba(217,119,6,0.06)_0%,transparent_50%)]"></div>
         </div>
 
-        <div className="relative z-10 max-w-3xl px-md py-3xl text-center">
-          <div className="text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-accent mb-md">
-            UVM Consulting Group
+        <div className="relative z-10 px-md py-3xl w-full">
+          <div className="max-w-3xl mx-auto text-center mb-2xl">
+            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-accent mb-md">
+              UVM Consulting Group
+            </div>
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal leading-tight text-white">
+              Zukunftsfähigkeit ist kein Zufall.{' '}
+              <span className="text-accent italic">
+                Sie ist der Mut, funktionierende Systeme zu hinterfragen
+              </span>{' '}
+              – bevor es der Markt tut.
+            </h1>
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal leading-tight text-white mb-lg">
-            Zukunftsfähigkeit ist kein Zufall.{' '}
-            <span className="text-accent italic">
-              Sie ist der Mut, funktionierende Systeme zu hinterfragen
-            </span>{' '}
-            – bevor es der Markt tut.
-          </h1>
-          <div className="text-lg font-light leading-relaxed text-white/60 max-w-5xl mx-auto">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg">
-              <div className="space-y-md">
+
+          <div className="w-full max-w-6xl mx-auto text-lg font-light leading-relaxed text-white/80 text-left">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-lg">
+              <div className="md:clamp-8-lines">
                 <p>
-                  Unser 4C-Modell macht diesen Mut systematisch: Es verbindet Corporate Strategy, Culture & Change, Code of Conduct und Competences zu einem Navigationsrahmen für Organisationen im Umbruch. Disruption & Veränderung gestalten
-                </p>
-                <p>
-                  Wie bereite ich meine Organisation auf Umbrüche vor, die noch niemand kommen sieht?
-                  Disruption trifft die, die sich für unverwundbar halten.
-                </p>
-                <p>
-                  Viele Organisationen investieren in Innovationsprogramme, agile Methoden und digitale Transformation. Dennoch scheitern Veränderungsprozesse regelmäßig – nicht an der Strategie, sondern an der Fähigkeit, Gewohntes loszulassen. Wer Disruption nur als technologisches Phänomen begreift, übersieht ihren eigentlichen Hebel: die Bereitschaft von Führungskräften, das eigene Geschäftsmodell radikal zu hinterfragen.
+                  Unser 4C-Modell verbindet Corporate Strategy, Culture & Change, Code of Conduct und Competences zu einem klaren Navigationsrahmen für Organisationen im Umbruch. Es hilft, Disruption früh zu erkennen und Veränderung wirksam zu gestalten, bevor äußerer Druck den Takt vorgibt.
                 </p>
               </div>
-              <div className="space-y-md">
+              <div className="md:clamp-8-lines">
                 <p>
-                 Vertrauen ist keine weiche Währung – es ist der härteste Wettbewerbsvorteil, den eine Organisation aufbauen kann. In einer Welt, in der Künstliche Intelligenz Entscheidungsprozesse verändert, Disruption ganze Geschäftsmodelle über Nacht infrage stellt und der Ruf nach Perspektivenvielfalt lauter wird, braucht Führung ein neues Fundament.
+                  Vertrauen ist dabei kein weiches Thema, sondern die Voraussetzung für Führung in Zeiten von KI, Unsicherheit und Perspektivenvielfalt. Der 4C-Navigator macht sichtbar, wie KI-ready Ihre Organisation ist und welche Entscheidungen jetzt Orientierung geben.
                 </p>
-                <p>
-                Trustful Leadership und Female Leadership sind dabei keine getrennten Agenden, sondern zwei Seiten derselben Erkenntnis: Organisationen, die Vertrauen systematisch aufbauen, schaffen genau die Bedingungen, unter denen diverse Führung wirksam wird – und diverse Führungsteams erzeugen genau die Entscheidungsqualität, die Vertrauen rechtfertigt. Dieser Kreislauf entsteht nicht zufällig. Er entsteht, wenn Strategie, Kultur, Haltung und Kompetenz gemeinsam gedacht werden – und genau das ist der Kern unseres 4C-Modells.
-                </p>
-                <p className="mb-xl">
-                  Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
-                </p>
+              </div>
+            </div>
 
-                <div
-                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                    textExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
-                  }`}
-                >
-                  <div className="space-y-lg pt-lg border-t border-white/10">
-                    <div className="space-y-md">
-                      <h3 className="text-2xl font-semibold text-accent">Trust & KI-Strategie</h3>
-                      <p className="italic text-white/70">
-                        Wie schaffe ich Vertrauen in einer Organisation, die zunehmend von Algorithmen mitgesteuert wird?
-                      </p>
-                      <p>
-                        Künstliche Intelligenz verändert nicht nur Prozesse – sie verschiebt die Grundlagen, auf denen Vertrauen in Organisationen entsteht.
-                      </p>
-                      <p>
-                        Die Einführung von KI-Systemen wird in vielen Unternehmen primär als technisches Projekt verstanden. Dabei zeigt sich immer deutlicher: Die entscheidende Hürde ist nicht die Technologie, sondern die Akzeptanz. Mitarbeitende fragen sich, ob Entscheidungen noch nachvollziehbar sind. Führungskräfte stehen vor der Herausforderung, Verantwortung zu übernehmen für Ergebnisse, die sie nicht vollständig durchdringen. Kunden erwarten Transparenz, die viele Systeme nicht liefern können.
-                      </p>
-                      <p>
-                        Im 4C-Modell greifen hier zwei Dimensionen ineinander: Corporate Strategy liefert den Rahmen für den KI-Einsatz – von der Digitalisierungsstrategie über People Analytics bis zur Prozessoptimierung. Der Code of Conduct stellt sicher, dass dieser Einsatz ethisch fundiert und nachvollziehbar bleibt. Vertrauenswürdige KI-Strategie beginnt nicht im Serverraum, sondern dort, wo Prinzipien auf Entscheidungen treffen – in der Führungsetage.
-                      </p>
-                    </div>
+            <div
+              id="expanded-content"
+              className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                textExpanded ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0'
+              }`}
+            >
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-lg pt-lg border-t border-white/10">
+                <div className="space-y-2xl">
+                  <div className="space-y-md">
+                    <h3 className="text-2xl font-semibold text-accent">Disruption strategisch gestalten</h3>
+                    <p className="italic text-white/70">
+                      Wie bereite ich meine Organisation auf Umbrüche vor, die noch niemand kommen sieht?
+                    </p>
+                    <p>
+                      Disruption trifft die, die sich für unverwundbar halten. Viele Organisationen investieren in Innovationsprogramme, agile Methoden und digitale Transformation. Dennoch scheitern Veränderungsprozesse regelmäßig – nicht an der Strategie, sondern an der Fähigkeit, Gewohntes loszulassen.
+                    </p>
+                    <p>
+                      Wer Disruption nur als technologisches Phänomen begreift, übersieht ihren eigentlichen Hebel: die Bereitschaft von Führungskräften, das eigene Geschäftsmodell radikal zu hinterfragen. Der 4C-Navigator beginnt bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern?
+                    </p>
+                  </div>
 
-                    <div className="space-y-md">
-                      <h3 className="text-2xl font-semibold text-accent">Trustful Leadership</h3>
-                      <p className="italic text-white/70">
-                        Wie führe ich so, dass Menschen mir auch dann folgen, wenn der Weg unsicher ist?
-                      </p>
-                      <p>
-                        In Zeiten permanenter Veränderung wird Vertrauen zur knappsten Ressource in Organisationen.
-                      </p>
-                      <p>
-                        Klassische Führungsmodelle setzen auf Kontrolle, Zielvorgaben und Reporting. Diese Instrumente verlieren ihre Wirksamkeit, wenn Märkte sich schneller verändern als Planungszyklen reichen, wenn hybride Teams die persönliche Begegnung zur Ausnahme machen und wenn die nächste Disruption nicht in der Branchenanalyse steht, sondern aus einem völlig anderen Feld kommt. Was bleibt, wenn die Rahmenbedingungen wegbrechen, ist Vertrauen – oder sein Fehlen.
-                      </p>
-                      <p>
-                        Trustful Leadership ist im 4C-Modell kein Einzelbaustein, sondern das verbindende Prinzip: Culture & Change schafft die psychologische Sicherheit, in der Offenheit möglich wird. Die Competences-Dimension entwickelt die Fähigkeiten, die vertrauensbasierte Führung im Alltag braucht – von systemischer Gesprächsführung bis zur Fähigkeit, Verletzlichkeit als Stärke zu begreifen. Nicht als weiches Kulturprogramm, sondern als strategische Kernkompetenz, die über die Anpassungsfähigkeit einer ganzen Organisation entscheidet.
-                      </p>
-                    </div>
-
-                    <div className="space-y-md">
-                      <h3 className="text-2xl font-semibold text-accent">Female Leadership</h3>
-                      <p className="italic text-white/70">
-                        Wie entfaltet Führung ihre volle Wirkung, wenn Perspektivenvielfalt kein Lippenbekenntnis bleibt?
-                      </p>
-                      <p>
-                        Diversity in Führungspositionen ist kein Fairness-Thema – es ist eine Frage der strategischen Intelligenz.
-                      </p>
-                      <p>
-                        Die Forschungslage ist eindeutig: Diverse Führungsteams treffen bessere Entscheidungen, erkennen Risiken früher und reagieren flexibler auf Veränderungen. Dennoch verharren viele Organisationen in homogenen Führungsstrukturen – nicht aus bösem Willen, sondern weil Systeme sich selbst reproduzieren, wenn niemand aktiv eingreift.
-                      </p>
-                      <p>
-                        Hier zeigt der 4C-Navigator, warum isolierte Maßnahmen scheitern: Mentoring allein ändert keine Culture, Quoten allein ersetzen keine Competence-Entwicklung, und Leitbilder bleiben wirkungslos ohne einen Code of Conduct, der Perspektivenvielfalt in konkretes Führungshandeln übersetzt. Female Leadership strategisch zu fördern bedeutet, alle vier Dimensionen gleichzeitig in den Blick zu nehmen – und die Mechanismen offenzulegen, die Potenziale systematisch bremsen.
-                      </p>
-                    </div>
+                  <div className="space-y-md">
+                    <h3 className="text-2xl font-semibold text-accent">Trust & KI-Strategie</h3>
+                    <p className="italic text-white/70">
+                      Wie schaffe ich Vertrauen in einer Organisation, die zunehmend von Algorithmen mitgesteuert wird?
+                    </p>
+                    <p>
+                      Künstliche Intelligenz verändert nicht nur Prozesse – sie verschiebt die Grundlagen, auf denen Vertrauen in Organisationen entsteht. Die entscheidende Hürde ist nicht die Technologie, sondern die Akzeptanz. Mitarbeitende fragen sich, ob Entscheidungen noch nachvollziehbar sind. Führungskräfte stehen vor der Herausforderung, Verantwortung zu übernehmen für Ergebnisse, die sie nicht vollständig durchdringen.
+                    </p>
+                    <p>
+                      Im 4C-Modell greifen hier zwei Dimensionen ineinander: Corporate Strategy liefert den Rahmen für den KI-Einsatz – von der Digitalisierungsstrategie über People Analytics bis zur Prozessoptimierung. Der Code of Conduct stellt sicher, dass dieser Einsatz ethisch fundiert und nachvollziehbar bleibt. Vertrauenswürdige KI-Strategie beginnt nicht im Serverraum, sondern dort, wo Prinzipien auf Entscheidungen treffen – in der Führungsetage.
+                    </p>
                   </div>
                 </div>
 
-                <div>
-                  <button
-                    type="button"
-                    onClick={() => setTextExpanded(!textExpanded)}
-                    className="px-8 py-3 bg-accent/20 text-accent hover:bg-accent hover:text-white transition-all font-semibold text-base border-2 border-accent uppercase tracking-[0.1em]"
-                  >
-                    {textExpanded ? 'Weniger anzeigen' : 'Weiterlesen'}
-                  </button>
+                <div className="space-y-2xl">
+                  <div className="space-y-md">
+                    <h3 className="text-2xl font-semibold text-accent">Trustful Leadership</h3>
+                    <p className="italic text-white/70">
+                      Wie führe ich so, dass Menschen mir auch dann folgen, wenn der Weg unsicher ist?
+                    </p>
+                    <p>
+                      In Zeiten permanenter Veränderung wird Vertrauen zur knappsten Ressource in Organisationen. Klassische Führungsmodelle setzen auf Kontrolle, Zielvorgaben und Reporting. Diese Instrumente verlieren ihre Wirksamkeit, wenn Märkte sich schneller verändern als Planungszyklen reichen.
+                    </p>
+                    <p>
+                      Trustful Leadership ist im 4C-Modell kein Einzelbaustein, sondern das verbindende Prinzip: Culture & Change schafft die psychologische Sicherheit, in der Offenheit möglich wird. Die Competences-Dimension entwickelt die Fähigkeiten, die vertrauensbasierte Führung im Alltag braucht – von systemischer Gesprächsführung bis zur Fähigkeit, Verletzlichkeit als Stärke zu begreifen. Nicht als weiches Kulturprogramm, sondern als strategische Kernkompetenz.
+                    </p>
+                  </div>
+
+                  <div className="space-y-md">
+                    <h3 className="text-2xl font-semibold text-accent">Female Leadership</h3>
+                    <p className="italic text-white/70">
+                      Wie entfaltet Führung ihre volle Wirkung, wenn Perspektivenvielfalt kein Lippenbekenntnis bleibt?
+                    </p>
+                    <p>
+                      Diversity in Führungspositionen ist kein Fairness-Thema – es ist eine Frage der strategischen Intelligenz. Diverse Führungsteams treffen bessere Entscheidungen, erkennen Risiken früher und reagieren flexibler auf Veränderungen. Dennoch verharren viele Organisationen in homogenen Strukturen – nicht aus bösem Willen, sondern weil Systeme sich selbst reproduzieren.
+                    </p>
+                    <p>
+                      Hier zeigt der 4C-Navigator, warum isolierte Maßnahmen scheitern: Mentoring allein ändert keine Culture, Quoten allein ersetzen keine Competence-Entwicklung, und Leitbilder bleiben wirkungslos ohne einen Code of Conduct, der Perspektivenvielfalt in konkretes Führungshandeln übersetzt. Female Leadership strategisch zu fördern bedeutet, alle vier Dimensionen gleichzeitig in den Blick zu nehmen.
+                    </p>
+                  </div>
                 </div>
               </div>
+            </div>
+
+            <div className="mt-lg">
+              <button
+                type="button"
+                onClick={() => setTextExpanded(!textExpanded)}
+                aria-expanded={textExpanded}
+                aria-controls="expanded-content"
+                className="px-8 py-3 bg-accent/20 text-accent hover:bg-accent hover:text-white transition-all font-semibold text-base border-2 border-accent uppercase tracking-[0.1em]"
+              >
+                {textExpanded ? 'Weniger anzeigen' : 'Weiterlesen'}
+              </button>
             </div>
           </div>
         </div>
