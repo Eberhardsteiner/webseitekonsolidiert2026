@@ -295,10 +295,14 @@ function NewHomePage() {
 
  <div>
                 <p>
-                 Vertrauen ist keine weiche Währung – es ist der härteste Wettbewerbsvorteil, den eine Organisation aufbauen kann. In einer Welt, in der Künstliche Intelligenz Entscheidungsprozesse verändert, Disruption ganze Geschäftsmodelle über Nacht infrage stellt und der Ruf nach Perspektivenvielfalt lauter wird, braucht Führung ein neues Fundament. Trustful Leadership und Female Leadership sind dabei keine getrennten Agenden, sondern zwei Seiten derselben Erkenntnis: Organisationen, die Vertrauen systematisch aufbauen, schaffen genau die Bedingungen, unter denen diverse Führung wirksam wird – und diverse Führungsteams erzeugen genau die Entscheidungsqualität, die Vertrauen rechtfertigt. Dieser Kreislauf entsteht nicht zufällig. Er entsteht, wenn Strategie, Kultur, Haltung und Kompetenz gemeinsam gedacht werden – und genau das ist der Kern unseres 4C-Modells.
+                 Vertrauen ist keine weiche Währung – es ist der härteste Wettbewerbsvorteil, den eine Organisation aufbauen kann. In einer Welt, in der Künstliche Intelligenz Entscheidungsprozesse verändert, Disruption ganze Geschäftsmodelle über Nacht infrage stellt und der Ruf nach Perspektivenvielfalt lauter wird, braucht Führung ein neues Fundament. 
                 </p>
               </div>
-              
+               <div>
+                <p>
+                Trustful Leadership und Female Leadership sind dabei keine getrennten Agenden, sondern zwei Seiten derselben Erkenntnis: Organisationen, die Vertrauen systematisch aufbauen, schaffen genau die Bedingungen, unter denen diverse Führung wirksam wird – und diverse Führungsteams erzeugen genau die Entscheidungsqualität, die Vertrauen rechtfertigt. Dieser Kreislauf entsteht nicht zufällig. Er entsteht, wenn Strategie, Kultur, Haltung und Kompetenz gemeinsam gedacht werden – und genau das ist der Kern unseres 4C-Modells.
+                </p>
+              </div>
             </div>
             <div className="text-center">
               <button
