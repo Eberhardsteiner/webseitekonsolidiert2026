@@ -273,23 +273,38 @@ function NewHomePage() {
             </span>{' '}
             – bevor es der Markt tut.
           </h1>
-          <p className="text-lg font-light leading-relaxed text-white/60 max-w-2xl mx-auto">
-            Unser 4C-Modell macht diesen Mut systematisch: Es verbindet Corporate Strategy, Culture & Change, Code of Conduct und Competences zu einem Navigationsrahmen für Organisationen im Umbruch. Disruption & Veränderung gestalten
-Wie bereite ich meine Organisation auf Umbrüche vor, die noch niemand kommen sieht?
-Disruption trifft selten die Unvorbereiteten zuerst – sie trifft die, die sich für unverwundbar halten.
-Viele Organisationen investieren in Innovationsprogramme, agile Methoden und digitale Transformation. Dennoch scheitern Veränderungsprozesse regelmäßig – nicht an der Strategie, sondern an der Fähigkeit, Gewohntes loszulassen. Wer Disruption nur als technologisches Phänomen begreift, übersieht ihren eigentlichen Hebel: die Bereitschaft von Führungskräften, das eigene Geschäftsmodell radikal zu hinterfragen.
-Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
-          </p>
+          <div className="text-lg font-light leading-relaxed text-white/60 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-md">
+              <div>
+                <p className="mb-sm">
+                  Unser 4C-Modell macht diesen Mut systematisch: Es verbindet Corporate Strategy, Culture & Change, Code of Conduct und Competences zu einem Navigationsrahmen für Organisationen im Umbruch. Disruption & Veränderung gestalten
+                </p>
+                <p className="mb-sm">
+                  Wie bereite ich meine Organisation auf Umbrüche vor, die noch niemand kommen sieht?
+                  Disruption trifft selten die Unvorbereiteten zuerst – sie trifft die, die sich für unverwundbar halten.
+                </p>
+                <p>
+                  Viele Organisationen investieren in Innovationsprogramme, agile Methoden und digitale Transformation. Dennoch scheitern Veränderungsprozesse regelmäßig – nicht an der Strategie, sondern an der Fähigkeit, Gewohntes loszulassen. Wer Disruption nur als technologisches Phänomen begreift, übersieht ihren eigentlichen Hebel: die Bereitschaft von Führungskräften, das eigene Geschäftsmodell radikal zu hinterfragen.
+                </p>
+              </div>
+              <div>
+                <p>
+                  Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
+                </p>
+              </div>
+            </div>
+            <div className="text-center">
+              <button
+                type="button"
+                className="text-sm text-accent hover:text-accent-light transition-colors font-medium"
+              >
+                Weiterlesen
+              </button>
+            </div>
+          </div>
         </div>
 
         <div className="absolute bottom-lg left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3">
-          <button
-            type="button"
-            onClick={() => setQuickScanOpen(true)}
-            className="px-10 py-5 bg-accent text-white text-2xl font-semibold tracking-[0.08em] transition-all hover:bg-accent-light text-center leading-snug max-w-[min(calc(100vw-2rem),44rem)]"
-          >
-            Prüfen Sie Ihre Zukunftsfähigkeit
-          </button>
           <span className="text-[0.6rem] uppercase tracking-[0.2em] text-white/25">Scroll</span>
           <div className="w-px h-10 bg-gradient-to-b from-accent to-transparent animate-pulse"></div>
         </div>
@@ -404,10 +419,15 @@ Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Plan
               <span className="font-sans text-lg font-bold text-accent tracking-wider">4C</span>
             </div>
 
-            <p className="text-center pt-sm text-base font-normal text-slate mb-0">
-              16 konkrete Produkte. Ein integriertes System. Vom QuickScan bis zur zertifizierten
-              Umsetzung.
-            </p>
+            <div className="text-center pt-lg">
+              <button
+                type="button"
+                onClick={() => setQuickScanOpen(true)}
+                className="px-10 py-5 bg-accent text-white text-2xl font-semibold tracking-[0.08em] transition-all hover:bg-accent-light text-center leading-snug"
+              >
+                Prüfen Sie Ihre Zukunftsfähigkeit
+              </button>
+            </div>
           </div>
         </div>
       </section>
