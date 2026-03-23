@@ -287,11 +287,7 @@ function NewHomePage() {
                   Viele Organisationen investieren in Innovationsprogramme, agile Methoden und digitale Transformation. Dennoch scheitern Veränderungsprozesse regelmäßig – nicht an der Strategie, sondern an der Fähigkeit, Gewohntes loszulassen. Wer Disruption nur als technologisches Phänomen begreift, übersieht ihren eigentlichen Hebel: die Bereitschaft von Führungskräften, das eigene Geschäftsmodell radikal zu hinterfragen.
                 </p>
               </div>
-              <div>
-                <p>
-                  Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
-                </p>
-              </div>
+              
 
  <div>
                 <p>
@@ -303,6 +299,13 @@ function NewHomePage() {
                 Trustful Leadership und Female Leadership sind dabei keine getrennten Agenden, sondern zwei Seiten derselben Erkenntnis: Organisationen, die Vertrauen systematisch aufbauen, schaffen genau die Bedingungen, unter denen diverse Führung wirksam wird – und diverse Führungsteams erzeugen genau die Entscheidungsqualität, die Vertrauen rechtfertigt. Dieser Kreislauf entsteht nicht zufällig. Er entsteht, wenn Strategie, Kultur, Haltung und Kompetenz gemeinsam gedacht werden – und genau das ist der Kern unseres 4C-Modells.
                 </p>
               </div>
+
+<div>
+                <p>
+                  Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
+                </p>
+              </div>
+              
             </div>
             <div className="text-center">
               <button
