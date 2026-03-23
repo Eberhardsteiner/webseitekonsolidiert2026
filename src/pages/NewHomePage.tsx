@@ -11,6 +11,7 @@ function NewHomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [quickScanOpen, setQuickScanOpen] = useState(false);
+  const [textExpanded, setTextExpanded] = useState(false);
   const unternehmenDropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -297,12 +298,70 @@ function NewHomePage() {
                 <p className="mb-xl">
                   Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
                 </p>
+
+                <div
+                  className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                    textExpanded ? 'max-h-[2000px] opacity-100' : 'max-h-0 opacity-0'
+                  }`}
+                >
+                  <div className="space-y-lg pt-lg border-t border-white/10">
+                    <div className="space-y-md">
+                      <h3 className="text-2xl font-semibold text-accent">Trust & KI-Strategie</h3>
+                      <p className="italic text-white/70">
+                        Wie schaffe ich Vertrauen in einer Organisation, die zunehmend von Algorithmen mitgesteuert wird?
+                      </p>
+                      <p>
+                        Künstliche Intelligenz verändert nicht nur Prozesse – sie verschiebt die Grundlagen, auf denen Vertrauen in Organisationen entsteht.
+                      </p>
+                      <p>
+                        Die Einführung von KI-Systemen wird in vielen Unternehmen primär als technisches Projekt verstanden. Dabei zeigt sich immer deutlicher: Die entscheidende Hürde ist nicht die Technologie, sondern die Akzeptanz. Mitarbeitende fragen sich, ob Entscheidungen noch nachvollziehbar sind. Führungskräfte stehen vor der Herausforderung, Verantwortung zu übernehmen für Ergebnisse, die sie nicht vollständig durchdringen. Kunden erwarten Transparenz, die viele Systeme nicht liefern können.
+                      </p>
+                      <p>
+                        Im 4C-Modell greifen hier zwei Dimensionen ineinander: Corporate Strategy liefert den Rahmen für den KI-Einsatz – von der Digitalisierungsstrategie über People Analytics bis zur Prozessoptimierung. Der Code of Conduct stellt sicher, dass dieser Einsatz ethisch fundiert und nachvollziehbar bleibt. Vertrauenswürdige KI-Strategie beginnt nicht im Serverraum, sondern dort, wo Prinzipien auf Entscheidungen treffen – in der Führungsetage.
+                      </p>
+                    </div>
+
+                    <div className="space-y-md">
+                      <h3 className="text-2xl font-semibold text-accent">Trustful Leadership</h3>
+                      <p className="italic text-white/70">
+                        Wie führe ich so, dass Menschen mir auch dann folgen, wenn der Weg unsicher ist?
+                      </p>
+                      <p>
+                        In Zeiten permanenter Veränderung wird Vertrauen zur knappsten Ressource in Organisationen.
+                      </p>
+                      <p>
+                        Klassische Führungsmodelle setzen auf Kontrolle, Zielvorgaben und Reporting. Diese Instrumente verlieren ihre Wirksamkeit, wenn Märkte sich schneller verändern als Planungszyklen reichen, wenn hybride Teams die persönliche Begegnung zur Ausnahme machen und wenn die nächste Disruption nicht in der Branchenanalyse steht, sondern aus einem völlig anderen Feld kommt. Was bleibt, wenn die Rahmenbedingungen wegbrechen, ist Vertrauen – oder sein Fehlen.
+                      </p>
+                      <p>
+                        Trustful Leadership ist im 4C-Modell kein Einzelbaustein, sondern das verbindende Prinzip: Culture & Change schafft die psychologische Sicherheit, in der Offenheit möglich wird. Die Competences-Dimension entwickelt die Fähigkeiten, die vertrauensbasierte Führung im Alltag braucht – von systemischer Gesprächsführung bis zur Fähigkeit, Verletzlichkeit als Stärke zu begreifen. Nicht als weiches Kulturprogramm, sondern als strategische Kernkompetenz, die über die Anpassungsfähigkeit einer ganzen Organisation entscheidet.
+                      </p>
+                    </div>
+
+                    <div className="space-y-md">
+                      <h3 className="text-2xl font-semibold text-accent">Female Leadership</h3>
+                      <p className="italic text-white/70">
+                        Wie entfaltet Führung ihre volle Wirkung, wenn Perspektivenvielfalt kein Lippenbekenntnis bleibt?
+                      </p>
+                      <p>
+                        Diversity in Führungspositionen ist kein Fairness-Thema – es ist eine Frage der strategischen Intelligenz.
+                      </p>
+                      <p>
+                        Die Forschungslage ist eindeutig: Diverse Führungsteams treffen bessere Entscheidungen, erkennen Risiken früher und reagieren flexibler auf Veränderungen. Dennoch verharren viele Organisationen in homogenen Führungsstrukturen – nicht aus bösem Willen, sondern weil Systeme sich selbst reproduzieren, wenn niemand aktiv eingreift.
+                      </p>
+                      <p>
+                        Hier zeigt der 4C-Navigator, warum isolierte Maßnahmen scheitern: Mentoring allein ändert keine Culture, Quoten allein ersetzen keine Competence-Entwicklung, und Leitbilder bleiben wirkungslos ohne einen Code of Conduct, der Perspektivenvielfalt in konkretes Führungshandeln übersetzt. Female Leadership strategisch zu fördern bedeutet, alle vier Dimensionen gleichzeitig in den Blick zu nehmen – und die Mechanismen offenzulegen, die Potenziale systematisch bremsen.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
                 <div>
                   <button
                     type="button"
+                    onClick={() => setTextExpanded(!textExpanded)}
                     className="px-8 py-3 bg-accent/20 text-accent hover:bg-accent hover:text-white transition-all font-semibold text-base border-2 border-accent uppercase tracking-[0.1em]"
                   >
-                    Weiterlesen
+                    {textExpanded ? 'Weniger anzeigen' : 'Weiterlesen'}
                   </button>
                 </div>
               </div>
