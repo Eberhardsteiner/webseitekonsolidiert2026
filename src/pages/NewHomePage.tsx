@@ -274,7 +274,11 @@ function NewHomePage() {
             – bevor es der Markt tut.
           </h1>
           <p className="text-lg font-light leading-relaxed text-white/60 max-w-2xl mx-auto">
-            Unser 4C-Modell macht diesen Mut systematisch: Es verbindet Corporate Strategy, Culture & Change, Code of Conduct und Competences zu einem Navigationsrahmen für Organisationen im Umbruch.
+            Unser 4C-Modell macht diesen Mut systematisch: Es verbindet Corporate Strategy, Culture & Change, Code of Conduct und Competences zu einem Navigationsrahmen für Organisationen im Umbruch. Disruption & Veränderung gestalten
+Wie bereite ich meine Organisation auf Umbrüche vor, die noch niemand kommen sieht?
+Disruption trifft selten die Unvorbereiteten zuerst – sie trifft die, die sich für unverwundbar halten.
+Viele Organisationen investieren in Innovationsprogramme, agile Methoden und digitale Transformation. Dennoch scheitern Veränderungsprozesse regelmäßig – nicht an der Strategie, sondern an der Fähigkeit, Gewohntes loszulassen. Wer Disruption nur als technologisches Phänomen begreift, übersieht ihren eigentlichen Hebel: die Bereitschaft von Führungskräften, das eigene Geschäftsmodell radikal zu hinterfragen.
+Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
           </p>
         </div>
 
