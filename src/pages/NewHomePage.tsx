@@ -282,7 +282,7 @@ function NewHomePage() {
           <button
             type="button"
             onClick={() => setQuickScanOpen(true)}
-            className="px-5 py-2.5 bg-accent text-white text-xs font-semibold tracking-[0.08em] transition-all hover:bg-accent-light text-center leading-snug max-w-[min(calc(100vw-2rem),22rem)]"
+            className="px-10 py-5 bg-accent text-white text-2xl font-semibold tracking-[0.08em] transition-all hover:bg-accent-light text-center leading-snug max-w-[min(calc(100vw-2rem),44rem)]"
           >
             Prüfen Sie Ihre Zukunftsfähigkeit
           </button>
