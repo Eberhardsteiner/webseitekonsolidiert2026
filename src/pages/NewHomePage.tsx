@@ -292,6 +292,13 @@ function NewHomePage() {
                   Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
                 </p>
               </div>
+
+ <div>
+                <p>
+                  Deshalb beginnt unser 4C-Navigator bei der Corporate Strategy – nicht als Planungsübung, sondern als ehrliche Standortbestimmung: Wie KI-ready ist Ihre Organisation wirklich? Wie weit tragen Ihre Prozesse, wenn sich die Spielregeln ändern? Disruption strategisch zu gestalten bedeutet, Strukturen zu schaffen, in denen mutige Entscheidungen möglich werden, bevor der Handlungsdruck sie erzwingt.
+                </p>
+              </div>
+              
             </div>
             <div className="text-center">
               <button
