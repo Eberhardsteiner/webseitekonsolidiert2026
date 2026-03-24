@@ -44,7 +44,7 @@ export default function Header() {
     { label: 'UVM Consulting Group', href: `${ROUTES.UNTERNEHMEN}#uvm-consulting` },
     { label: 'Geschäftsführung', href: `${ROUTES.UNTERNEHMEN}#geschaeftsfuehrung` },
     { label: 'Werte und Beratungsansatz', href: `${ROUTES.UNTERNEHMEN}#werte` },
-    { label: 'Netzwerkpartner', href: `${ROUTES.UNTERNEHMEN}#netzwerk` },
+    { label: 'Netzwerk', href: `${ROUTES.UNTERNEHMEN}#netzwerk` },
     { label: 'Referenzen', href: `${ROUTES.UNTERNEHMEN}#referenzen` },
     { label: 'Publikationen', href: `${ROUTES.UNTERNEHMEN}#publikationen` },
   ];
