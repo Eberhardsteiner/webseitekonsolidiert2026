@@ -16,7 +16,7 @@ const DIMS = [
       { id: "cc1", label: "Digitale Kultur", q: "Wie ausgepr\u00e4gt ist eine Kultur der digitalen Offenheit und Experimentierfreude?" },
       { id: "cc2", label: "Behavioral Design & Nudging", q: "Wie gezielt setzen Sie verhaltens\u00f6konomische Ans\u00e4tze ein, um Ver\u00e4nderungen zu f\u00f6rdern?" },
       { id: "cc3", label: "Zertifikat Empfehlenswerter Arbeitgeber", q: "Wie strategisch arbeiten Sie an Ihrer Arbeitgeberattraktivit\u00e4t und Employer Brand?" },
-      { id: "cc4", label: "KI Change Readyness Radar", q: "Wie gut erfassen und managen Sie die Ver\u00e4nderungsbereitschaft bez\u00fcglich KI?" },
+      { id: "cc4", label: "KI Change Readiness Radar", q: "Wie gut erfassen und managen Sie die Ver\u00e4nderungsbereitschaft bez\u00fcglich KI?" },
     ],
   },
   {
