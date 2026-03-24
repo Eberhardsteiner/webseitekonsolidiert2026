@@ -91,7 +91,6 @@ const referenceGroups: ReferenceGroup[] = [
     letter: 'L',
     entries: [
       { name: 'Landeshauptstadt München' }, { name: 'Landratsamt München' },  { name: 'Landratsamt Roth' },
-      { name: 'Altfett Lesch GmbH' },
       { name: 'Lebenshilfe Tirol gGmbH' },
       { name: 'LHI Leasing GmbH' },
     ],
