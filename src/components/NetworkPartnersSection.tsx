@@ -99,7 +99,7 @@ export default function NetworkPartnersSection() {
         <div className="bg-white rounded-2xl shadow-sm border border-primary-100 overflow-hidden">
           <div className="p-6 md:p-8 border-b border-gray-100">
             <p className="text-lg text-gray-700 leading-relaxed">
-              Hier finden Sie eine Übersicht der Netzwerkpartner. Jeder Eintrag ist als Dropdown aufgebaut.
+              Hier finden Sie eine Übersicht der Netzwerkpartnerinnen und -partner. Jeder Eintrag ist als Dropdown aufgebaut.
               Falls eine Webseite hinterlegt ist, führt der Button direkt dorthin.
             </p>
           </div>
