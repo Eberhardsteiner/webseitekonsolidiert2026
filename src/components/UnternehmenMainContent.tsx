@@ -5,7 +5,7 @@ import CompetenceAccordion from './CompetenceAccordion';
 import NetworkPartnersSection from './NetworkPartnersSection';
 import ReferencesSection from './ReferencesSection';
 import BooksSection from './BooksSection';
-import { Building2, Target, UserCircle, ChevronDown, ChevronUp } from 'lucide-react';
+import { Building2, Target, CircleUser as UserCircle, ChevronDown, ChevronUp } from 'lucide-react';
 import { BASE_PATH } from '../constants/paths';
 
 type Company = {
@@ -174,7 +174,7 @@ export default function UnternehmenMainContent() {
 
   return (
     <>
-      <section id="uvm-consulting" className="py-20 bg-[#131826]">
+      <section id="uvm-consulting" className="py-20 bg-[#101420]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-8">
             <div className="p-3 bg-primary-600 rounded-lg">
@@ -451,7 +451,7 @@ export default function UnternehmenMainContent() {
         </div>
       </section>
 
-      <section id="werte" className="py-20 bg-black">
+      <section id="werte" className="py-20 bg-[#101420]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-4 mb-12">
             <div className="p-3 bg-primary-600 rounded-lg">
@@ -461,7 +461,7 @@ export default function UnternehmenMainContent() {
           </div>
 
           <div className="space-y-8">
-            <div className="bg-black p-8 rounded-xl border border-gray-800">
+            <div className="bg-[#101420] p-8 rounded-xl border border-white/10">
               <h3 className="text-2xl font-bold text-white mb-4">Unsere Werte</h3>
               <p className="text-lg text-white leading-relaxed mb-6">
                 Wir arbeiten praxisnah und wissenschaftlich fundiert. Darüber hinaus leiten uns Werte, die in
@@ -521,7 +521,7 @@ export default function UnternehmenMainContent() {
               </ul>
             </div>
 
-            <div className="bg-gray-800 p-8 rounded-xl">
+            <div className="bg-[#101420] p-8 rounded-xl">
               <h3 className="text-2xl font-bold text-white mb-4">Unser Beratungsansatz</h3>
               <p className="text-lg text-gray-200 leading-relaxed mb-4">
                 Disruption wirkt selten nur an einer Stelle. Neue Technologien, Fachkräftemangel, Kulturwandel oder

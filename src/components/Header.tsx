@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { ROUTES, SECTIONS } from '../constants/paths';
+import logoImage from '../assets/UVM_Institut_HighRes.png';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,14 +57,14 @@ export default function Header() {
       >
         Zum Hauptinhalt springen
       </a>
-      <header className="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+      <header className="fixed top-0 left-0 right-0 bg-white/92 backdrop-blur-md z-50 border-b border-slate-200/60 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20 min-h-[64px] md:min-h-[80px]">
           <Link to="/" className="flex items-center">
             <img
-              src="https://le-cdn.website-editor.net/s/6e5c80c276764a0bb09282133a3a53b4/dms3rep/multi/opt/UVM+UCMCG-a8473808-1920w.jpg?Expires=1770690367&Signature=nClerWS7W-mUQWsKXoiFk7-cTrNS~QRxOqmuOK0WEDnJmKLbFteHYaSEhJb7to3loscFegXx10fa-f204koNU1ZJhqgnmWt320xG~4JMxlqXca7YDDOWaam-m4qDFTwFza8A3d4B-Sq9FN-Pi1eaKoAHRlyEMb9j6~ozI6e-LGWccgtv4AojrfWcsuyoPdVTL1c0hi-xuFZmUTwKW44EBys3gTRd2xiBKIttZtvhTprf9MQQNRWru7r2NxVSOFxLGp5Y-cqwK9X3zMELlGy5mU96nU1Q3n5WiSA3BdAWTOeuGzvuqF~dLrGwHBBegl7gLkmUTMlMV4YIQz8HAk6AUQ__&Key-Pair-Id=K2NXBXLF010TJW"
-              alt="UVM Consulting Group Logo"
-              className="h-10 md:h-12 w-auto object-contain"
+              src={logoImage}
+              alt="UVM Institut"
+              className="h-12 md:h-14 w-auto object-contain"
             />
           </Link>
 
@@ -74,7 +75,7 @@ export default function Header() {
                 aria-expanded={isDropdownOpen}
                 aria-haspopup="true"
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="flex items-center gap-1 text-base text-gray-600 hover:text-primary-500 transition-colors font-medium"
+                className="flex items-center gap-1 text-base text-gray-700 hover:text-primary-500 transition-colors font-medium"
               >
                 Unternehmen
                 <ChevronDown size={16} className={`transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
@@ -82,13 +83,13 @@ export default function Header() {
 
               {isDropdownOpen && (
                 <div className="absolute top-full left-0 pt-1 w-64">
-                  <div className="bg-white rounded-lg shadow-xl border border-gray-100 py-2">
+                  <div className="bg-white rounded-lg shadow-xl border border-slate-200/60 py-2">
                     {dropdownItems.map((item) => (
                       <Link
                         key={item.href}
                         to={item.href}
                         onClick={() => setIsDropdownOpen(false)}
-                        className="block px-4 py-3 text-sm text-gray-600 hover:text-primary-500 hover:bg-primary-50 transition-colors"
+                        className="block px-4 py-3 text-sm text-gray-700 hover:text-primary-500 hover:bg-primary-50 transition-colors"
                       >
                         {item.label}
                       </Link>
@@ -107,7 +108,7 @@ export default function Header() {
                   <Link
                     key={item.href}
                     to={item.href}
-                    className="text-base text-gray-600 hover:text-primary-500 transition-colors font-medium whitespace-nowrap"
+                    className="text-base text-gray-700 hover:text-primary-500 transition-colors font-medium whitespace-nowrap"
                   >
                     {item.label}
                   </Link>
@@ -118,7 +119,7 @@ export default function Header() {
                 <a
                   key={item.href}
                   href={isHomePage ? item.href : `${ROUTES.HOME}${item.href}`}
-                  className="text-base text-gray-600 hover:text-primary-500 transition-colors font-medium whitespace-nowrap"
+                  className="text-base text-gray-700 hover:text-primary-500 transition-colors font-medium whitespace-nowrap"
                 >
                   {item.label}
                 </a>
@@ -134,7 +135,7 @@ export default function Header() {
           </nav>
 
           <button
-            className="md:hidden p-2"
+            className="md:hidden p-2 text-gray-700"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Menu"
           >
@@ -143,11 +144,11 @@ export default function Header() {
         </div>
 
         {isOpen && (
-          <nav className="md:hidden py-4 border-t border-gray-100">
+          <nav className="md:hidden py-4 border-t border-slate-200/60 bg-white/95">
             <div>
               <button
                 onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-                className="w-full flex items-center justify-between py-3 text-base text-gray-600 hover:text-primary-500 transition-colors font-medium"
+                className="w-full flex items-center justify-between py-3 text-base text-gray-700 hover:text-primary-500 transition-colors font-medium"
               >
                 Unternehmen
                 <ChevronDown size={16} className={`transition-transform ${isDropdownOpen ? 'rotate-180' : ''}`} />
@@ -158,7 +159,7 @@ export default function Header() {
                     <Link
                       key={item.href}
                       to={item.href}
-                      className="block py-2 text-sm text-gray-500 hover:text-primary-500 transition-colors"
+                      className="block py-2 text-sm text-gray-600 hover:text-primary-500 transition-colors"
                       onClick={() => {
                         setIsOpen(false);
                         setIsDropdownOpen(false);
@@ -180,7 +181,7 @@ export default function Header() {
                   <Link
                     key={item.href}
                     to={item.href}
-                    className="block py-3 text-base text-gray-600 hover:text-primary-500 transition-colors font-medium"
+                    className="block py-3 text-base text-gray-700 hover:text-primary-500 transition-colors font-medium"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.label}
@@ -192,7 +193,7 @@ export default function Header() {
                 <a
                   key={item.href}
                   href={isHomePage ? item.href : `${ROUTES.HOME}${item.href}`}
-                  className="block py-3 text-base text-gray-600 hover:text-primary-500 transition-colors font-medium"
+                  className="block py-3 text-base text-gray-700 hover:text-primary-500 transition-colors font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.label}

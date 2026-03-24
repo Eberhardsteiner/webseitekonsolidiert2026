@@ -16,9 +16,8 @@ export default {
           subtle: 'rgba(13, 148, 136, 0.08)',
         },
         dark: {
-          DEFAULT: '#0a0f1a',
-          blue: '#111827',
-          navy: '#1a2332',
+          DEFAULT: '#101420',
+          surface: '#101420',
         },
         slate: {
           DEFAULT: '#334155',

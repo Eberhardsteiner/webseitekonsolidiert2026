@@ -348,7 +348,7 @@ export default function ProductsSection() {
 
       {modalContent && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 animate-fade-in"
+          className="fixed inset-0 bg-[#101420] bg-opacity-90 flex items-center justify-center z-50 p-4 animate-fade-in"
           onClick={closeModal}
         >
           <div

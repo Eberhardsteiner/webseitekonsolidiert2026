@@ -194,7 +194,7 @@ export default function QuickScan4C() {
 
   const baseBg = {
     minHeight: "100vh",
-    background: "linear-gradient(155deg, #0c2a3a 0%, #0a1f2e 30%, #0d1b2a 60%, #091520 100%)",
+    background: "#101420",
     color: "#fff",
     fontFamily: "'DM Sans', 'Helvetica Neue', sans-serif",
   };

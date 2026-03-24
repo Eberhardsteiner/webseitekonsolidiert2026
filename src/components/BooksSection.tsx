@@ -94,7 +94,7 @@ const books: Book[] = [
 
 export default function BooksSection() {
   return (
-    <section id="publikationen" className="py-20 bg-[#131826]">
+    <section id="publikationen" className="py-20 bg-[#101420]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-4 mb-12 text-white">
           <div className="p-3 bg-primary-600 rounded-lg">

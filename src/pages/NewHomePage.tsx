@@ -5,6 +5,7 @@ import { ROUTES } from '../constants/paths';
 import UnternehmenMainContent from '../components/UnternehmenMainContent';
 import ProductsSection from '../components/ProductsSection';
 import QuickScan4C from '../components/QuickScan4C';
+import logoImage from '../assets/UVM_Institut_HighRes.png';
 
 function NewHomePage() {
   const [scrolled, setScrolled] = useState(false);
@@ -76,16 +77,17 @@ function NewHomePage() {
   return (
     <div className="min-h-screen bg-white">
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-dark shadow-[0_1px_0_rgba(13,148,136,0.15)] ${
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-[#101420] shadow-[0_1px_0_rgba(13,148,136,0.15)] ${
           scrolled ? 'py-3' : 'py-4'
         }`}
       >
         <div className="max-w-container mx-auto px-md flex items-center justify-between">
-          <Link to={ROUTES.HOME} className="flex items-center gap-3">
-            <span className="font-sans text-xs font-bold text-accent border-2 border-accent px-2.5 py-1 tracking-[0.15em]">
-              UVM
-            </span>
-            <span className="text-sm font-medium text-white tracking-wide">Consulting Group</span>
+          <Link to={ROUTES.HOME} className="flex items-center">
+            <img
+              src={logoImage}
+              alt="UVM Institut"
+              className="h-10 md:h-12 w-auto object-contain"
+            />
           </Link>
 
           <div className="hidden md:flex items-center gap-lg">
@@ -103,7 +105,7 @@ function NewHomePage() {
                 />
               </button>
               {dropdownOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-dark border border-accent/20 shadow-xl">
+                <div className="absolute top-full left-0 mt-2 w-64 bg-[#101420] border border-accent/20 shadow-xl">
                   <a
                     href="#uvm-consulting"
                     onClick={() => setDropdownOpen(false)}
@@ -182,7 +184,7 @@ function NewHomePage() {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="fixed inset-0 z-40 bg-dark flex items-center justify-center">
+        <div className="fixed inset-0 z-40 bg-[#101420] flex items-center justify-center">
           <div className="text-center">
             <div className="flex flex-col gap-lg">
               <div className="flex flex-col gap-3">
@@ -259,7 +261,7 @@ function NewHomePage() {
       )}
 
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#0a0f1a] via-[#0f172a] to-[#132030]">
+        <div className="absolute inset-0 bg-[#101420]">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_25%_75%,rgba(13,148,136,0.1)_0%,transparent_55%),radial-gradient(ellipse_at_75%_25%,rgba(217,119,6,0.06)_0%,transparent_50%)]"></div>
         </div>
 
@@ -376,7 +378,7 @@ function NewHomePage() {
         </div>
       </section>
 
-      <section className="py-3xl bg-dark-blue">
+      <section className="py-3xl bg-[#101420]">
         <div className="max-w-container mx-auto px-md">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-md">
             {[
@@ -481,7 +483,7 @@ function NewHomePage() {
               ))}
             </div>
 
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-dark rounded-full flex items-center justify-center shadow-[0_0_0_6px_white,0_4px_20px_rgba(0,0,0,0.15)] hidden md:flex">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-[#101420] rounded-full flex items-center justify-center shadow-[0_0_0_6px_white,0_4px_20px_rgba(0,0,0,0.15)] hidden md:flex">
               <span className="font-sans text-lg font-bold text-accent tracking-wider">4C</span>
             </div>
 
@@ -500,7 +502,7 @@ function NewHomePage() {
 
       <ProductsSection />
 
-      <section id="prozess" className="py-3xl bg-gray-800">
+      <section id="prozess" className="py-3xl bg-[#101420]">
         <div className="max-w-container mx-auto px-md">
           <div className="text-center mb-2xl max-w-3xl mx-auto">
             <span className="inline-block text-[0.65rem] font-bold uppercase tracking-[0.2em] text-accent-light mb-sm px-3.5 py-1.5 border border-accent/30">
@@ -574,7 +576,7 @@ function NewHomePage() {
 
       <UnternehmenMainContent />
 
-      <section id="kontakt" className="py-3xl bg-dark">
+      <section id="kontakt" className="py-3xl bg-[#101420]">
         <div className="max-w-container mx-auto px-md">
           <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_0.7fr] gap-3xl items-center">
             <div className="fade-in">
@@ -629,7 +631,7 @@ function NewHomePage() {
         </div>
       </section>
 
-      <footer className="bg-dark py-xl border-t border-accent/15">
+      <footer className="bg-[#101420] py-xl border-t border-accent/15">
         <div className="max-w-container mx-auto px-md">
           <div className="flex flex-wrap justify-between items-start gap-xl pb-lg border-b border-white/[0.06]">
             <div>
@@ -679,7 +681,7 @@ function NewHomePage() {
 
       {quickScanOpen && (
         <div
-          className="fixed inset-0 z-[100] overflow-y-auto bg-[#0d1b2a]"
+          className="fixed inset-0 z-[100] overflow-y-auto bg-[#101420]"
           role="dialog"
           aria-modal="true"
           aria-label="4C Navigator Quickscan"
