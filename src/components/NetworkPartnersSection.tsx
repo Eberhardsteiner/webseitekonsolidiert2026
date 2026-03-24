@@ -88,7 +88,7 @@ export default function NetworkPartnersSection() {
             <Users size={32} className="text-white" />
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Netzwerkpartner</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Netzwerk</h2>
             <p className="mt-2 text-base text-gray-700 leading-relaxed">
               Durch unsere langjährige Tätigkeit an Hochschulen und Universitäten verfügen wir über ein Netzwerk
               an Kooperationspartnern und Spezialisten, die wir bei Bedarf zu unseren Projekten hinzuziehen.
