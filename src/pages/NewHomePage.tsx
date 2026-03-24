@@ -434,8 +434,8 @@ function NewHomePage() {
             </p>
           </div>
 
-          <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-0.5 bg-light mb-xl">
+          <div className="relative mb-xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:auto-rows-fr gap-0.5 bg-light">
               {[
                 {
                   id: 'strategy',
@@ -468,7 +468,7 @@ function NewHomePage() {
               ].map((card) => (
                 <div
                   key={card.id}
-                  className={`fade-in p-xl bg-white relative overflow-hidden transition-all hover:-translate-y-0.5 hover:shadow-xl before:absolute before:top-0 before:left-0 before:w-1 before:h-full before:bg-${card.color} hover:bg-${card.color}-light`}
+                  className={`fade-in p-xl bg-white relative overflow-hidden h-full transition-all hover:-translate-y-0.5 hover:shadow-xl before:absolute before:top-0 before:left-0 before:w-1 before:h-full before:bg-${card.color} hover:bg-${card.color}-light`}
                 >
                   <span
                     className={`text-[0.65rem] font-bold uppercase tracking-[0.15em] text-${card.color} block mb-2`}
@@ -483,19 +483,21 @@ function NewHomePage() {
               ))}
             </div>
 
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-[#101420] rounded-full flex items-center justify-center shadow-[0_0_0_6px_white,0_4px_20px_rgba(0,0,0,0.15)] hidden md:flex">
-              <span className="font-sans text-lg font-bold text-accent tracking-wider">4C</span>
+            <div className="absolute inset-0 hidden md:flex items-center justify-center pointer-events-none z-20">
+              <div className="w-20 h-20 bg-[#101420] rounded-full flex items-center justify-center shadow-[0_0_0_6px_white,0_4px_20px_rgba(0,0,0,0.15)]">
+                <span className="font-sans text-lg font-bold text-accent tracking-wider">4C</span>
+              </div>
             </div>
+          </div>
 
-            <div className="text-center pt-lg">
-              <button
-                type="button"
-                onClick={() => setQuickScanOpen(true)}
-                className="px-10 py-5 bg-accent text-white text-2xl font-semibold tracking-[0.08em] transition-all hover:bg-accent-light text-center leading-snug"
-              >
-                Prüfen Sie Ihre Zukunftsfähigkeit
-              </button>
-            </div>
+          <div className="text-center pt-lg">
+            <button
+              type="button"
+              onClick={() => setQuickScanOpen(true)}
+              className="px-10 py-5 bg-accent text-white text-2xl font-semibold tracking-[0.08em] transition-all hover:bg-accent-light text-center leading-snug"
+            >
+              Prüfen Sie Ihre Zukunftsfähigkeit
+            </button>
           </div>
         </div>
       </section>
