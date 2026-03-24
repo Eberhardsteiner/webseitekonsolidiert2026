@@ -37,7 +37,7 @@ const referenceGroups: ReferenceGroup[] = [
   {
     letter: 'C',
     entries: [
-      { name: 'Caritas Moosburg' }, { name: 'Cardo Door Production GmbH Moosburg' },
+      { name: 'Caritas München' }, { name: 'Cardo Door Production GmbH Moosburg' },
       { name: 'Centour Centrum für Tourismus, Management & Reiseverkehrssicherheit e.V. München' },
       { name: 'Consalco GmbH Erding' },
     ],
