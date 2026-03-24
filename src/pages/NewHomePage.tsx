@@ -132,7 +132,7 @@ function NewHomePage() {
                     onClick={() => setDropdownOpen(false)}
                     className="block px-4 py-3 text-xs text-white/70 hover:bg-accent/10 hover:text-white transition-colors border-b border-white/5"
                   >
-                    Netzwerkpartner
+                    Netzwerk
                   </a>
                   <a
                     href="#referenzen"
@@ -217,7 +217,7 @@ function NewHomePage() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-base text-white/70 tracking-[0.08em] font-light"
                 >
-                  Netzwerkpartner
+                  Netzwerk
                 </a>
                 <a
                   href="#referenzen"
