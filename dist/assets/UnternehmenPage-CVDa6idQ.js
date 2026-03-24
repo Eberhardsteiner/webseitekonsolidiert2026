@@ -1,0 +1,1 @@
+import{j as e,U as n}from"./index-BBhIKkQm.js";import{H as t,F as s}from"./Footer-DeJqzkHW.js";import"./react-vendor-B711IIKO.js";import"./lucide-vendor-CEMe7T-P.js";function o(){return e.jsxs("div",{className:"min-h-screen bg-white",children:[e.jsx(t,{}),e.jsx("main",{id:"main-content",className:"pt-16 md:pt-20",children:e.jsx(n,{})}),e.jsx(s,{})]})}export{o as default};
