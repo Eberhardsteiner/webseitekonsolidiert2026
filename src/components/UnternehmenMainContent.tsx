@@ -221,7 +221,7 @@ export default function UnternehmenMainContent() {
           <div className="space-y-6">
             <AccordionItem
               title="Prof. Dr. Miriam Landes"
-              subtitle="Diplom-Psychologin, Humanbiologin und promovierte Expertin im Bereich Motivation und Persönlichkeit (LMU München)"
+              subtitle="Senior Beraterin für Responsible Leadership, Strategie und Change | Coach für Vorstände und Geschäftsführungen | Expertin im Bereich Female und Responsible Leadership"
               imageSrc={`${BASE_PATH}/img/people/MiriamLandes.jpg`}
               imageAlt="Prof. Dr. Miriam Landes"
             >
@@ -230,7 +230,7 @@ export default function UnternehmenMainContent() {
                   Prof. Dr. Miriam Landes steht für wissenschaftlich fundierte, praxisorientierte Führungskräfteentwicklung.
                   Ihre Arbeit verbindet aktuelle Forschung mit den konkreten Herausforderungen moderner Organisationen –
                   von Change- und Innovationsprozessen über agiles Management bis hin zur digitalen Transformation mit
-                  Fokus auf Mensch-Maschine-Schnittstellen und Künstliche Intelligenz.
+                  Fokus auf Mensch-Maschine-Schnittstellen und Künstliche Intelligenz. Eine besondere Expertise hat sie im Bereich Female Leadership und der Frage des verantwortungsbetonten Führens.
                 </p>
 
                 <p className="text-lg leading-relaxed">
@@ -242,7 +242,7 @@ export default function UnternehmenMainContent() {
 
                 <p className="text-lg leading-relaxed">
                   Mit ihrer Expertise gestaltet sie Kultur im Wandel: modern, nachhaltig und wirkungsvoll. Als Spezialistin
-                  für Modern Leadership, New Work und organisationalen Wandel verbindet sie bewährte wissenschaftliche
+                  für den Responsible Leadership Approach, New Work und organisationalen Wandel verbindet sie bewährte wissenschaftliche
                   Erkenntnisse mit langjähriger praktischer Erfahrung – und schafft so echten Mehrwert für Menschen und
                   Organisationen. Sie verfügt über umfassende Führungserfahrung in der Wirtschaft und war mehrere Jahre
                   Dekanin einer Fakultät für Wirtschaftspsychologie.
@@ -352,7 +352,7 @@ export default function UnternehmenMainContent() {
 
             <AccordionItem
               title="Prof. Dr. Eberhard Steiner"
-              subtitle="Wirtschaftswissenschaftler, Dr. rer. pol. (TU Freiberg), Dipl.-Kfm. (Univ.), Dipl.-Betriebswirt (FH), Experte für Strategie, Digitalisierung und Innovation"
+              subtitle="Senior Berater für KI-Strategie, Disruption und Führung | Coach für Vorstände und Geschäftsführungen | Experte für Strategie, Digitalisierung und Umgang mit Disruption"
               imageSrc={`${BASE_PATH}/img/people/EberhardSteiner.jpg`}
               imageAlt="Prof. Dr. Eberhard Steiner"
             >
@@ -361,7 +361,7 @@ export default function UnternehmenMainContent() {
                   Unternehmen sind heute besonders gefordert, Innovationskraft, agile Strukturen und eine zukunftsweisende
                   Strategie zu entwickeln. Prof. Dr. Eberhard Steiner vereint tiefgreifendes Wissen in den Bereichen
                   Management und Strategie mit umfassender Erfahrung im Innovationsmanagement und der Anwendung künstlicher
-                  Intelligenz, um Ihr Unternehmen erfolgreich durch den Wandel zu führen.
+                  Intelligenz, um Ihr Unternehmen erfolgreich durch den disruptiven Wandel zu führen.
                 </p>
 
                 <p className="text-lg leading-relaxed">
