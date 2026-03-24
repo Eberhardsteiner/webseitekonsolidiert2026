@@ -133,7 +133,7 @@ const groupCompanies: Company[] = [
       'In der UVM-Akademie bündeln wir unsere Fort- und Weiterbildungsangebote sowie den Bereich der Führungskräfteentwicklung. Ebenso haben wir hier die gesamte E-Learning-Aktivitäten und Business Games (z.B. Crisis Manager) fokussiert"'
   },
   {
-    name: 'UVM-Innovationlab',
+    name: 'UVM Innovationlab',
     logoSrc: `${BASE_PATH}/img/brands/UVM_Innovation_Lab_Ohne_Zusatz.png`,
     focus:
       'Das UVM Innovation Lab bietet Beratung und individuell konzipierte Workshops für Unternehmen an, um Kreativität und Innovation systematisch zu stärken. Dabei kommen agile Methoden wie Design Thinking und die Ideenstrom-Methode zum Einsatz. Der Ansatz ist interdisziplinär und verbindet Wirtschaftswissenschaften und Wirtschaftspsychologie auf Basis wissenschaftlicher Erkenntnisse. Innovation wird dabei nicht nur als kreativer Prozess verstanden, sondern auch in ihren psychologischen und organisatorischen Auswirkungen betrachtet, etwa mit Blick auf Motivation, Neurobiologie und Change Management.'
