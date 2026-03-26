@@ -186,7 +186,7 @@ export default function ReferencesSection() {
           <div className="min-w-0">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Referenzen</h2>
             <p className="mt-2 text-base text-gray-700 leading-relaxed">
-              (Auswahl):
+              (Auswahl)
             </p>
           </div>
         </div>
