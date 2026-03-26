@@ -15,21 +15,23 @@ const networkPartners: NetworkPartner[] = [
   {
     name: 'Ask.Us',
     meta: 'Klaus Augustin und Angelika Malinowski',
-    topics: ['Projektmanagement'],
+    topics: ['Prozessmanagement', 'Konfliktmanagement', 'Mediation'],
     website: {
       url: 'https://ask-us-consulting.de/',
     },
    },
-  {
-    name: 'Stephan Greif',
-    topics: ['Outdoor-Training', 'Projektmanagement'],
-  website: {
-      url: 'https://stephangreif.de/',
+ {
+    name: 'Axxtas GmbH',
+     meta: 'Tim Kumpat',
+    topics: ['KI', 'Digitalisierung'],
+    website: {
+      url: 'https://axxtas.com/de',
+  }, 
     },
-     },
   {
-    name: 'Ilona Dittner - com motus Leaders Academy GmbH',
-    topics: ['Konstruktive Schlagfertigkeit', 'Verhandlungsführung'],
+    name: 'com motus Leaders Academy GmbH',
+    meta: 'Ilona Dittner',
+    topics: ['Konstruktive Schlagfertigkeit', 'Verhandlungsführung', 'Präsentieren'],
     website: {
       url: 'https://www.leaders-academy.eu/',
     },
@@ -40,13 +42,18 @@ const networkPartners: NetworkPartner[] = [
     
      
   },
+   {
+    name: 'Stephan Th. Greif Consulting',
+    topics: ['Outdoor-Training', 'Projektmanagement', 'Consulting'],
+  website: {
+      url: 'https://stephangreif.de/',
+    },
+     },
+  
   {
-    name: 'Tim Kumpat',
-    topics: ['KI', 'Digitalisierung'],
-  },
-  {
-    name: 'Prof. Dr. Stephanie Rascher',
-    topics: ['Institut für Human Factors'],
+    name: 'Institut für Human Factors',
+    meta: 'Prof. Dr. Stephanie Rascher',
+    topics: ['Führung', 'Moderation'],
     website: {
       url: 'https://www.institut-hf.de/',
     },
