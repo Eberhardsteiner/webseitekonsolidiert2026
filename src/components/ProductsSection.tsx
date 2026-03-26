@@ -97,7 +97,7 @@ const quadrants = [
         icon: Award,
       },
       {
-        name: 'KI Change Readyness Radar',
+        name: 'KI Change Readiness Radar',
         description: ['KI-Transformation scheitert selten an der Technologie – sondern daran, ob Menschen, Führung und Organisation bereit sind, neue Arbeitsweisen wirklich zu übernehmen.',
                       'Der KI Change Readiness Radar macht diese Bereitschaft systematisch sichtbar: Wir messen Akzeptanz, Kompetenzlücken, Vertrauen/Transparenz, Führungsfähigkeit und die organisatorischen Voraussetzungen (z. B. Prozesse, Verantwortlichkeiten, Governance).',
                       'Ergebnis ist eine klare „Heatmap“ mit den größten Hebeln und Risiken sowie einer priorisierten Roadmap, wie Sie von Pilot‑Use‑Cases zur Skalierung kommen – ohne Reibungsverluste und mit messbarem Fortschritt.',
