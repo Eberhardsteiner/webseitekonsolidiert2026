@@ -378,6 +378,43 @@ function NewHomePage() {
                   </div>
                 </div>
               </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pt-2xl mt-2xl border-t border-white/10 text-left">
+                <div className="space-y-md">
+                  <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Beratung</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Wir begleiten Vorstände, Geschäftsführungen und Führungsteams bei strategischen Fragen zu Disruption, Digitalisierung, KI und Führung. Gemeinsam klären wir Ausgangslage, Zielbild und Prioritäten und übersetzen komplexe Entwicklungen in belastbare Entscheidungen, klare Verantwortlichkeiten und realistische nächste Schritte.
+                  </p>
+                </div>
+
+                <div className="space-y-md">
+                  <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Workshops</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Unsere Workshops schaffen einen strukturierten Raum, um Perspektiven zu bündeln, Spannungen sichtbar zu machen und tragfähige Lösungen zu erarbeiten. So entstehen nicht nur gute Diskussionen, sondern konkrete Entscheidungen, belastbare Roadmaps und eine gemeinsame Grundlage für wirksame Umsetzung.
+                  </p>
+                </div>
+
+                <div className="space-y-md">
+                  <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Coachings</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    In unseren Coachings begleiten wir Führungskräfte und Schlüsselpersonen in Phasen hoher Dynamik, Unsicherheit oder persönlicher Neuorientierung. Im vertraulichen Sparring stärken wir Entscheidungsfähigkeit, kommunikative Klarheit und Führungswirksamkeit, besonders im Zusammenspiel von KI, Veränderung und Verantwortung.
+                  </p>
+                </div>
+
+                <div className="space-y-md">
+                  <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Vorträge</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Unsere Vorträge verbinden wissenschaftliche Fundierung mit strategischer Relevanz und klarer Sprache. Wir geben Impulse zu KI, Trustful Leadership, Disruption, Kulturwandel und Female Leadership, die Orientierung geben, Diskussionen öffnen und den Blick auf konkrete Handlungsfelder lenken.
+                  </p>
+                </div>
+
+                <div className="space-y-md md:col-span-2">
+                  <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Schulungen</h3>
+                  <p className="text-white/80 leading-relaxed">
+                    Unsere Schulungen vermitteln Wissen praxisnah, anschlussfähig und auf die Realität Ihrer Organisation zugeschnitten. Wir qualifizieren Führungskräfte, Mitarbeitende und Multiplikatoren in Themen wie KI-Kompetenz, Veränderungsfähigkeit, Kommunikation und Führung, damit aus Erkenntnis tatsächlich neue Praxis entsteht.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div className="mt-lg">
