@@ -200,26 +200,26 @@ const quadrants = [
 
 const colorClasses = {
   teal: {
-    bg: 'bg-[#FAF8F2]',
-    border: 'border-[#4E9188]/25',
+    bg: 'bg-[rgba(78,145,136,0.05)]',
+    border: 'border-[rgba(78,145,136,0.42)]',
     text: 'text-[#233238]',
     accent: 'text-[#4E9188]',
   },
   cyan: {
-    bg: 'bg-[#FAF8F2]',
-    border: 'border-[#4E9188]/25',
+    bg: 'bg-[rgba(78,145,136,0.05)]',
+    border: 'border-[rgba(78,145,136,0.42)]',
     text: 'text-[#233238]',
     accent: 'text-[#4E9188]',
   },
   amber: {
-    bg: 'bg-[#FAF8F2]',
-    border: 'border-[#4E9188]/25',
+    bg: 'bg-[rgba(78,145,136,0.05)]',
+    border: 'border-[rgba(78,145,136,0.42)]',
     text: 'text-[#233238]',
     accent: 'text-[#4E9188]',
   },
   rose: {
-    bg: 'bg-[#FAF8F2]',
-    border: 'border-[#4E9188]/25',
+    bg: 'bg-[rgba(78,145,136,0.05)]',
+    border: 'border-[rgba(78,145,136,0.42)]',
     text: 'text-[#233238]',
     accent: 'text-[#4E9188]',
   },
@@ -260,19 +260,17 @@ export default function ProductsSection() {
   };
 
   return (
-    <section ref={sectionRef} id="leistungen" className="pt-28 pb-20 md:pt-40 md:pb-32 bg-[#F8F6F0] relative overflow-visible">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(78,145,136,0.03),transparent_60%)] pointer-events-none"></div>
-
+    <section ref={sectionRef} id="leistungen" className="pt-28 pb-20 md:pt-40 md:pb-32 bg-white relative overflow-visible">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="relative max-w-6xl mx-auto">
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
             <div
               className="w-96 h-96 rounded-full transition-opacity duration-700"
               style={{
-                background: 'conic-gradient(from 0deg, rgba(78,145,136,0.15), rgba(78,145,136,0.25), rgba(78,145,136,0.08), rgba(78,145,136,0.18), rgba(78,145,136,0.15))',
+                background: 'conic-gradient(from 0deg, rgba(78,145,136,0.12), rgba(78,145,136,0.22), rgba(78,145,136,0.10), rgba(78,145,136,0.18), rgba(78,145,136,0.15), rgba(78,145,136,0.12))',
                 maskImage: 'radial-gradient(circle, transparent 168px, black 168px)',
                 WebkitMaskImage: 'radial-gradient(circle, transparent 168px, black 168px)',
-                opacity: scrollProgress * 0.5,
+                opacity: scrollProgress * 0.75,
               }}
             ></div>
           </div>
@@ -298,11 +296,11 @@ export default function ProductsSection() {
                     {quadrant.products.map((product) => (
                       <div
                         key={product.name}
-                        className="rounded-lg p-4 hover:scale-[1.02] transition-all duration-300 group border border-[#4E9188]/15 bg-white/40 hover:bg-[#4E9188]/5 hover:border-[#4E9188]/25"
+                        className="rounded-lg p-4 hover:scale-[1.02] transition-all duration-300 group border border-[rgba(78,145,136,0.24)] bg-[rgba(78,145,136,0.07)] hover:bg-[rgba(78,145,136,0.11)] hover:border-[rgba(78,145,136,0.35)]"
                       >
                         <div className="flex items-center justify-between gap-3">
                           <div className="flex items-center gap-3 flex-1">
-                            <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all duration-300 bg-[#4E9188]/8">
+                            <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all duration-300 bg-[rgba(78,145,136,0.12)]">
                               <product.icon
                                 size={20}
                                 className="text-[#4E9188]"
@@ -316,7 +314,7 @@ export default function ProductsSection() {
                           </div>
                           <button
                             onClick={() => openModal(product.name, product.description)}
-                            className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 hover:scale-110 transition-transform bg-[#4E9188]/10 hover:bg-[#4E9188]/20 text-[#4E9188]"
+                            className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 hover:scale-110 transition-transform bg-[rgba(78,145,136,0.14)] hover:bg-[rgba(78,145,136,0.24)] text-[#4E9188]"
                             aria-label="Mehr Informationen"
                           >
                             <Info size={16} />
