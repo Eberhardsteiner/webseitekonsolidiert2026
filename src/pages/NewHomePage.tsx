@@ -279,8 +279,8 @@ function NewHomePage() {
             </h1>
           </div>
 
-          <div className="w-full max-w-6xl mx-auto text-lg font-light leading-relaxed text-white/80 text-center">
-            <div className="flex flex-wrap justify-center items-center gap-3 mb-lg">
+          <div className="w-full max-w-5xl mx-auto text-lg font-light leading-relaxed text-white/80 text-center">
+            <div className="flex flex-wrap justify-center items-center gap-3 mb-md">
               {[
                 'Disruption strategisch gestalten',
                 'Trust & KI-Strategie',
@@ -291,6 +291,24 @@ function NewHomePage() {
                   key={chip}
                   className="inline-block px-5 py-2.5 text-base font-medium border border-[#4E9188]/30 bg-[#4E9188]/10 text-[#4E9188] tracking-wide"
                   style={{ color: '#4E9188' }}
+                >
+                  {chip}
+                </span>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center items-center gap-3 mb-lg">
+              {[
+                'Beratung',
+                'Workshops',
+                'Coachings',
+                'Vorträge',
+                'Schulungen'
+              ].map((chip) => (
+                <span
+                  key={chip}
+                  className="inline-block px-5 py-2.5 text-base font-medium border border-[#3070B0]/30 bg-[#3070B0]/10 tracking-wide"
+                  style={{ color: '#3070B0' }}
                 >
                   {chip}
                 </span>
@@ -604,12 +622,18 @@ function NewHomePage() {
                 >
                   Jetzt QuickScan anfragen
                 </a>
-                <a
-                  href="tel:+498915900075"
-                  className="font-serif text-lg text-white/60 transition-colors hover:text-white"
-                >
-                  +49 89 15 9000 75
-                </a>
+                <div className="flex flex-col gap-1">
+                  <a
+                    href="tel:+498915900075"
+                    className="font-serif text-lg text-white/60 transition-colors hover:text-white"
+                  >
+                    +49 89 15 9000 75
+                  </a>
+                  <div className="text-xs text-white/40 font-light leading-relaxed">
+                    <div>Büro Erding: Pater-Alois-Weg 12</div>
+                    <div>Büro Olching: Josef-Bergmann-Weg 1</div>
+                  </div>
+                </div>
               </div>
             </div>
 
