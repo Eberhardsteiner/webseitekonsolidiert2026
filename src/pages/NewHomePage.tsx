@@ -13,7 +13,24 @@ function NewHomePage() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [quickScanOpen, setQuickScanOpen] = useState(false);
   const [textExpanded, setTextExpanded] = useState(false);
+  const [pendingScrollTarget, setPendingScrollTarget] = useState<string | null>(null);
   const unternehmenDropdownRef = useRef<HTMLDivElement>(null);
+
+  const scrollToExpandedSection = (targetId: string) => {
+    const element = document.getElementById(targetId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const handleIntroClick = (targetId: string) => {
+    if (textExpanded) {
+      scrollToExpandedSection(targetId);
+    } else {
+      setPendingScrollTarget(targetId);
+      setTextExpanded(true);
+    }
+  };
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -53,6 +70,16 @@ function NewHomePage() {
       document.body.style.overflow = '';
     };
   }, [quickScanOpen]);
+
+  useEffect(() => {
+    if (textExpanded && pendingScrollTarget) {
+      const timer = setTimeout(() => {
+        scrollToExpandedSection(pendingScrollTarget);
+        setPendingScrollTarget(null);
+      }, 300);
+      return () => clearTimeout(timer);
+    }
+  }, [textExpanded, pendingScrollTarget]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -282,36 +309,44 @@ function NewHomePage() {
           <div className="w-full max-w-5xl mx-auto text-lg font-light leading-relaxed text-white/80 text-center">
             <div className="flex flex-wrap justify-center items-center gap-3 mb-md">
               {[
-                'Disruption strategisch gestalten',
-                'Trust & KI-Strategie',
-                'Trustful Leadership',
-                'Female Leadership'
+                { label: 'Disruption strategisch gestalten', target: 'intro-disruption' },
+                { label: 'Trust & KI-Strategie', target: 'intro-trust-ki' },
+                { label: 'Trustful Leadership', target: 'intro-trustful-leadership' },
+                { label: 'Female Leadership', target: 'intro-female-leadership' }
               ].map((chip) => (
-                <span
-                  key={chip}
-                  className="inline-block px-5 py-2.5 text-base font-medium border border-[#4E9188]/30 bg-[#4E9188]/10 text-[#4E9188] tracking-wide"
+                <button
+                  key={chip.label}
+                  type="button"
+                  onClick={() => handleIntroClick(chip.target)}
+                  aria-label={`Springe zu ${chip.label}`}
+                  aria-controls="expanded-content"
+                  className="inline-block px-5 py-2.5 text-base font-medium border border-[#4E9188]/30 bg-[#4E9188]/10 text-[#4E9188] tracking-wide hover:bg-[#4E9188]/20 hover:border-[#4E9188]/50 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#4E9188]/50"
                   style={{ color: '#4E9188' }}
                 >
-                  {chip}
-                </span>
+                  {chip.label}
+                </button>
               ))}
             </div>
 
             <div className="flex flex-wrap justify-center items-center gap-3 mb-lg">
               {[
-                'Beratung',
-                'Workshops',
-                'Coachings',
-                'Vorträge',
-                'Schulungen'
+                { label: 'Beratung', target: 'intro-beratung' },
+                { label: 'Workshops', target: 'intro-workshops' },
+                { label: 'Coachings', target: 'intro-coachings' },
+                { label: 'Vorträge', target: 'intro-vortraege' },
+                { label: 'Schulungen', target: 'intro-schulungen' }
               ].map((chip) => (
-                <span
-                  key={chip}
-                  className="inline-block px-5 py-2.5 text-base font-medium border border-[#3070B0]/30 bg-[#3070B0]/10 tracking-wide"
+                <button
+                  key={chip.label}
+                  type="button"
+                  onClick={() => handleIntroClick(chip.target)}
+                  aria-label={`Springe zu ${chip.label}`}
+                  aria-controls="expanded-content"
+                  className="inline-block px-5 py-2.5 text-base font-medium border border-[#3070B0]/30 bg-[#3070B0]/10 tracking-wide hover:bg-[#3070B0]/20 hover:border-[#3070B0]/50 transition-all cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#3070B0]/50"
                   style={{ color: '#3070B0' }}
                 >
-                  {chip}
-                </span>
+                  {chip.label}
+                </button>
               ))}
             </div>
 
@@ -323,7 +358,7 @@ function NewHomePage() {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-lg pt-lg border-t border-white/10 text-left">
                 <div className="space-y-2xl">
-                  <div className="space-y-md">
+                  <div id="intro-disruption" className="space-y-md scroll-mt-32 md:scroll-mt-36">
                     <h3 className="text-2xl font-semibold text-accent">Disruption strategisch gestalten</h3>
                     <p className="italic text-white/70">
                       Wie bereite ich meine Organisation auf Umbrüche vor, die noch niemand kommen sieht?
@@ -336,7 +371,7 @@ function NewHomePage() {
                     </p>
                   </div>
 
-                  <div className="space-y-md">
+                  <div id="intro-trust-ki" className="space-y-md scroll-mt-32 md:scroll-mt-36">
                     <h3 className="text-2xl font-semibold text-accent">Trust & KI-Strategie</h3>
                     <p className="italic text-white/70">
                       Wie schaffe ich Vertrauen in einer Organisation, die zunehmend von Algorithmen mitgesteuert wird?
@@ -351,7 +386,7 @@ function NewHomePage() {
                 </div>
 
                 <div className="space-y-2xl">
-                  <div className="space-y-md">
+                  <div id="intro-trustful-leadership" className="space-y-md scroll-mt-32 md:scroll-mt-36">
                     <h3 className="text-2xl font-semibold text-accent">Trustful Leadership</h3>
                     <p className="italic text-white/70">
                       Wie führe ich so, dass Menschen mir auch dann folgen, wenn der Weg unsicher ist?
@@ -364,7 +399,7 @@ function NewHomePage() {
                     </p>
                   </div>
 
-                  <div className="space-y-md">
+                  <div id="intro-female-leadership" className="space-y-md scroll-mt-32 md:scroll-mt-36">
                     <h3 className="text-2xl font-semibold text-accent">Female Leadership</h3>
                     <p className="italic text-white/70">
                       Wie entfaltet Führung ihre volle Wirkung, wenn Perspektivenvielfalt kein Lippenbekenntnis bleibt?
@@ -380,35 +415,35 @@ function NewHomePage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pt-2xl mt-2xl border-t border-white/10 text-left">
-                <div className="space-y-md">
+                <div id="intro-beratung" className="space-y-md scroll-mt-32 md:scroll-mt-36">
                   <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Beratung</h3>
                   <p className="text-white/80 leading-relaxed">
                     Wir begleiten Vorstände, Geschäftsführungen und Führungsteams bei strategischen Fragen zu Disruption, Digitalisierung, KI und Führung. Gemeinsam klären wir Ausgangslage, Zielbild und Prioritäten und übersetzen komplexe Entwicklungen in belastbare Entscheidungen, klare Verantwortlichkeiten und realistische nächste Schritte.
                   </p>
                 </div>
 
-                <div className="space-y-md">
+                <div id="intro-workshops" className="space-y-md scroll-mt-32 md:scroll-mt-36">
                   <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Workshops</h3>
                   <p className="text-white/80 leading-relaxed">
                     Unsere Workshops schaffen einen strukturierten Raum, um Perspektiven zu bündeln, Spannungen sichtbar zu machen und tragfähige Lösungen zu erarbeiten. So entstehen nicht nur gute Diskussionen, sondern konkrete Entscheidungen, belastbare Roadmaps und eine gemeinsame Grundlage für wirksame Umsetzung.
                   </p>
                 </div>
 
-                <div className="space-y-md">
+                <div id="intro-coachings" className="space-y-md scroll-mt-32 md:scroll-mt-36">
                   <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Coachings</h3>
                   <p className="text-white/80 leading-relaxed">
                     In unseren Coachings begleiten wir Führungskräfte und Schlüsselpersonen in Phasen hoher Dynamik, Unsicherheit oder persönlicher Neuorientierung. Im vertraulichen Sparring stärken wir Entscheidungsfähigkeit, kommunikative Klarheit und Führungswirksamkeit, besonders im Zusammenspiel von KI, Veränderung und Verantwortung.
                   </p>
                 </div>
 
-                <div className="space-y-md">
+                <div id="intro-vortraege" className="space-y-md scroll-mt-32 md:scroll-mt-36">
                   <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Vorträge</h3>
                   <p className="text-white/80 leading-relaxed">
                     Unsere Vorträge verbinden wissenschaftliche Fundierung mit strategischer Relevanz und klarer Sprache. Wir geben Impulse zu KI, Trustful Leadership, Disruption, Kulturwandel und Female Leadership, die Orientierung geben, Diskussionen öffnen und den Blick auf konkrete Handlungsfelder lenken.
                   </p>
                 </div>
 
-                <div className="space-y-md md:col-span-2">
+                <div id="intro-schulungen" className="space-y-md md:col-span-2 scroll-mt-32 md:scroll-mt-36">
                   <h3 className="text-lg md:text-xl font-semibold" style={{ color: '#3070B0' }}>Schulungen</h3>
                   <p className="text-white/80 leading-relaxed">
                     Unsere Schulungen vermitteln Wissen praxisnah, anschlussfähig und auf die Realität Ihrer Organisation zugeschnitten. Wir qualifizieren Führungskräfte, Mitarbeitende und Multiplikatoren in Themen wie KI-Kompetenz, Veränderungsfähigkeit, Kommunikation und Führung, damit aus Erkenntnis tatsächlich neue Praxis entsteht.
