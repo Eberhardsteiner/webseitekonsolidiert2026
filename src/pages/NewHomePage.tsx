@@ -125,7 +125,7 @@ function NewHomePage() {
                     onClick={() => setDropdownOpen(false)}
                     className="block px-4 py-3 text-xs text-white/70 hover:bg-accent/10 hover:text-white transition-colors border-b border-white/5"
                   >
-                    Werte und Beratungsansatz
+                    Werte und Haltung
                   </a>
                   <a
                     href="#netzwerk"
@@ -155,7 +155,7 @@ function NewHomePage() {
               href="#ansatz"
               className="text-xs font-medium text-white/60 tracking-[0.1em] uppercase transition-colors hover:text-white"
             >
-              4C-Modell
+              Beratungsansatz
             </a>
             <a
               href="#leistungen"
@@ -210,7 +210,7 @@ function NewHomePage() {
                   onClick={() => setMobileMenuOpen(false)}
                   className="text-base text-white/70 tracking-[0.08em] font-light"
                 >
-                  Werte und Beratungsansatz
+                  Werte und Haltung
                 </a>
                 <a
                   href="#netzwerk"
@@ -239,7 +239,7 @@ function NewHomePage() {
                 onClick={() => setMobileMenuOpen(false)}
                 className="text-xl text-white uppercase tracking-[0.1em] font-light"
               >
-                4C-Modell
+                Beratungsansatz
               </a>
               <a
                 href="#leistungen"
@@ -267,7 +267,7 @@ function NewHomePage() {
 
         <div className="relative z-10 px-md py-3xl w-full">
           <div className="max-w-3xl mx-auto text-center mb-2xl">
-            <div className="text-[0.7rem] font-semibold uppercase tracking-[0.3em] text-accent mb-md">
+            <div className="text-lg md:text-2xl lg:text-3xl font-semibold uppercase tracking-[0.15em] text-accent mb-md">
               UVM Consulting Group
             </div>
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-normal leading-tight text-white">
@@ -279,18 +279,22 @@ function NewHomePage() {
             </h1>
           </div>
 
-          <div className="w-full max-w-6xl mx-auto text-lg font-light leading-relaxed text-white/80 text-left">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-lg mb-lg">
-              <div className="md:clamp-8-lines">
-                <p>
-                  Unser 4C-Modell verbindet Corporate Strategy, Culture & Change, Code of Conduct und Competences zu einem klaren Navigationsrahmen für Organisationen im Umbruch. Es hilft, Disruption früh zu erkennen und Veränderung wirksam zu gestalten, bevor äußerer Druck den Takt vorgibt.
-                </p>
-              </div>
-              <div className="md:clamp-8-lines">
-                <p>
-                  Vertrauen ist dabei kein weiches Thema, sondern die Voraussetzung für Führung in Zeiten von KI, Unsicherheit und Perspektivenvielfalt. Der 4C-Navigator macht sichtbar, wie KI-ready Ihre Organisation ist und welche Entscheidungen jetzt Orientierung geben.
-                </p>
-              </div>
+          <div className="w-full max-w-6xl mx-auto text-lg font-light leading-relaxed text-white/80 text-center">
+            <div className="flex flex-wrap justify-center items-center gap-3 mb-lg">
+              {[
+                'Disruption strategisch gestalten',
+                'Trust & KI-Strategie',
+                'Trustful Leadership',
+                'Female Leadership'
+              ].map((chip) => (
+                <span
+                  key={chip}
+                  className="inline-block px-5 py-2.5 text-base font-medium border border-[#4E9188]/30 bg-[#4E9188]/10 text-[#4E9188] tracking-wide"
+                  style={{ color: '#4E9188' }}
+                >
+                  {chip}
+                </span>
+              ))}
             </div>
 
             <div
@@ -299,7 +303,7 @@ function NewHomePage() {
                 textExpanded ? 'max-h-[5000px] opacity-100' : 'max-h-0 opacity-0'
               }`}
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-lg pt-lg border-t border-white/10">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-lg pt-lg border-t border-white/10 text-left">
                 <div className="space-y-2xl">
                   <div className="space-y-md">
                     <h3 className="text-2xl font-semibold text-accent">Disruption strategisch gestalten</h3>

@@ -34,7 +34,7 @@ export default function Header() {
   }, [isDropdownOpen]);
 
   const navItems = [
-    { label: '4C-Modell', href: '#ansatz' },
+    { label: 'Beratungsansatz', href: '#ansatz' },
     { label: 'Prozess', href: '#prozess' },
     { label: 'Führungskräfte', href: ROUTES.FUEHRUNGSKRAEFTEQUALIFIZIERUNG },
     { label: 'Kontakt', href: '#kontakt' },
@@ -43,7 +43,7 @@ export default function Header() {
   const dropdownItems = [
     { label: 'UVM Consulting Group', href: `${ROUTES.UNTERNEHMEN}#uvm-consulting` },
     { label: 'Geschäftsführung', href: `${ROUTES.UNTERNEHMEN}#geschaeftsfuehrung` },
-    { label: 'Werte und Beratungsansatz', href: `${ROUTES.UNTERNEHMEN}#werte` },
+    { label: 'Werte und Haltung', href: `${ROUTES.UNTERNEHMEN}#werte` },
     { label: 'Netzwerk', href: `${ROUTES.UNTERNEHMEN}#netzwerk` },
     { label: 'Referenzen', href: `${ROUTES.UNTERNEHMEN}#referenzen` },
     { label: 'Publikationen', href: `${ROUTES.UNTERNEHMEN}#publikationen` },

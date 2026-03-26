@@ -80,6 +80,10 @@ function TopicBadges({ topics }: { topics: string[] }) {
 }
 
 export default function NetworkPartnersSection() {
+  const sortedPartners = [...networkPartners].sort((a, b) =>
+    a.name.localeCompare(b.name, 'de', { sensitivity: 'base' })
+  );
+
   return (
     <section id="netzwerk" className="py-20 bg-white text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -105,7 +109,7 @@ export default function NetworkPartnersSection() {
           </div>
 
           <div className="p-4 md:p-6 space-y-3">
-            {networkPartners.map((p) => (
+            {sortedPartners.map((p) => (
               <details key={p.name} className="group rounded-xl border border-gray-100 bg-white shadow-sm">
                 <summary className="list-none cursor-pointer select-none p-5 md:p-6">
                   <div className="flex items-start justify-between gap-6">

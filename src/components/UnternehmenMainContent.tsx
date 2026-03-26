@@ -457,7 +457,7 @@ export default function UnternehmenMainContent() {
             <div className="p-3 bg-primary-600 rounded-lg">
               <Target size={32} className="text-white" />
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white">Werte und Beratungsansatz</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-white">Werte und Haltung</h2>
           </div>
 
           <div className="space-y-8">
@@ -522,14 +522,14 @@ export default function UnternehmenMainContent() {
             </div>
 
             <div className="bg-[#101420] p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-white mb-4">Unser Beratungsansatz</h3>
+              <h3 className="text-2xl font-bold text-white mb-4">Haltung</h3>
               <p className="text-lg text-gray-200 leading-relaxed mb-4">
                 Disruption wirkt selten nur an einer Stelle. Neue Technologien, Fachkräftemangel, Kulturwandel oder
                 Nachhaltigkeitsanforderungen verändern Kompetenzen, Zusammenarbeit und Entscheidungen gleichzeitig.
-                Deshalb betrachten wir Organisationen als integriertes System, nicht als Sammlung einzelner Initiativen.
+                Unser systemischer Ansatz betrachtet Organisationen daher als integriertes Ganzes, nicht als Sammlung einzelner Initiativen.
               </p>
               <p className="text-lg text-gray-200 leading-relaxed">
-                Unser Ansatz verbindet vier Dimensionen zu einem synchronisierten Ganzen: Kompetenzen, Kultur,
+                Wir verbinden vier Dimensionen zu einem synchronisierten System: Kompetenzen, Kultur,
                 Verhaltensgrundsätze und Unternehmensstrategie. Damit werden Maßnahmen anschlussfähig: Strategie wird
                 umsetzbar, Führung wird konsistent, Lernen wird zielgerichtet und Kultur wird gestaltbar.
               </p>

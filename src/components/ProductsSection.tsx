@@ -200,38 +200,30 @@ const quadrants = [
 
 const colorClasses = {
   teal: {
-    bg: 'bg-primary-50',
-    border: 'border-primary-200',
-    text: 'text-primary-700',
-    accent: 'text-primary-500',
+    bg: 'bg-[#FAF8F2]',
+    border: 'border-[#4E9188]/25',
+    text: 'text-[#233238]',
+    accent: 'text-[#4E9188]',
   },
   cyan: {
-    bg: 'bg-secondary-50',
-    border: 'border-secondary-200',
-    text: 'text-secondary-700',
-    accent: 'text-secondary-500',
-    gradient:
-      'bg-[linear-gradient(135deg,rgba(139,172,189,1)_0%,rgba(63,92,108,1)_100%)]',
+    bg: 'bg-[#FAF8F2]',
+    border: 'border-[#4E9188]/25',
+    text: 'text-[#233238]',
+    accent: 'text-[#4E9188]',
   },
   amber: {
-    bg: 'bg-tertiary-50',
-    border: 'border-tertiary-200',
-    text: 'text-tertiary-700',
-    accent: 'text-tertiary-600',
-    gradient: 'from-tertiary-400 to-tertiary-300',
+    bg: 'bg-[#FAF8F2]',
+    border: 'border-[#4E9188]/25',
+    text: 'text-[#233238]',
+    accent: 'text-[#4E9188]',
   },
   rose: {
-    bg: 'bg-quaternary-50',
-    border: 'border-quaternary-200',
-    text: 'text-quaternary-700',
-    accent: 'text-quaternary-600',
-    gradient:
-      'bg-[linear-gradient(135deg,rgba(100,143,159,1)_0%,rgba(148,180,190,1)_100%)]',
+    bg: 'bg-[#FAF8F2]',
+    border: 'border-[#4E9188]/25',
+    text: 'text-[#233238]',
+    accent: 'text-[#4E9188]',
   },
 };
-
-const slateBlueQuadrantGradient =
-  'bg-[linear-gradient(135deg,rgba(141,173,190,1)_0%,rgba(63,91,107,1)_100%)]';
 
 export default function ProductsSection() {
   const [modalContent, setModalContent] = useState<{ title: string; description: string | Array<string | ReactNode> } | null>(null);
@@ -268,8 +260,8 @@ export default function ProductsSection() {
   };
 
   return (
-    <section ref={sectionRef} id="leistungen" className="pt-28 pb-20 md:pt-40 md:pb-32 bg-gradient-to-b from-gray-50 to-white relative overflow-visible">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(20,184,166,0.05),transparent_60%)] pointer-events-none"></div>
+    <section ref={sectionRef} id="leistungen" className="pt-28 pb-20 md:pt-40 md:pb-32 bg-[#F8F6F0] relative overflow-visible">
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_rgba(78,145,136,0.03),transparent_60%)] pointer-events-none"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="relative max-w-6xl mx-auto">
@@ -277,10 +269,10 @@ export default function ProductsSection() {
             <div
               className="w-96 h-96 rounded-full transition-opacity duration-700"
               style={{
-                background: 'conic-gradient(from 0deg, #001B2C, #3C4449, #B8C2D1, #6B7F95, #001B2C)',
+                background: 'conic-gradient(from 0deg, rgba(78,145,136,0.15), rgba(78,145,136,0.25), rgba(78,145,136,0.08), rgba(78,145,136,0.18), rgba(78,145,136,0.15))',
                 maskImage: 'radial-gradient(circle, transparent 168px, black 168px)',
                 WebkitMaskImage: 'radial-gradient(circle, transparent 168px, black 168px)',
-                opacity: scrollProgress * 0.6,
+                opacity: scrollProgress * 0.5,
               }}
             ></div>
           </div>
@@ -288,23 +280,17 @@ export default function ProductsSection() {
           <div className="relative grid grid-cols-1 md:grid-cols-2 gap-8">
             {quadrants.map((quadrant, index) => {
               const colors = colorClasses[quadrant.color as keyof typeof colorClasses];
-              const cardBg =
-                quadrant.color === 'amber' || quadrant.color === 'teal'
-                  ? slateBlueQuadrantGradient
-                  : quadrant.color === 'rose' || quadrant.color === 'cyan'
-                    ? colors.gradient
-                    : `bg-gradient-to-br ${colors.gradient}`;
               return (
                 <div
                   key={quadrant.title}
-                  className={`${cardBg} rounded-2xl p-8 text-white relative z-10 hover:shadow-2xl transition-all duration-700`}
+                  className={`${colors.bg} rounded-2xl p-8 border-2 ${colors.border} relative z-10 hover:shadow-xl transition-all duration-700`}
                   style={{
                     transform: getQuadrantTransform(index),
                     opacity: scrollProgress,
                   }}
                 >
                   <h3
-                    className="text-2xl font-bold mb-6 border-b border-white/20 pb-4 group-hover:scale-105 transition-transform duration-300"
+                    className={`text-3xl font-bold mb-6 border-b ${colors.border} pb-4 transition-transform duration-300 ${colors.text}`}
                   >
                     {quadrant.title}
                   </h3>
@@ -312,25 +298,25 @@ export default function ProductsSection() {
                     {quadrant.products.map((product) => (
                       <div
                         key={product.name}
-                        className="backdrop-blur-sm rounded-lg p-4 hover:scale-105 transition-all duration-300 group bg-white/10 hover:bg-white/20"
+                        className="rounded-lg p-4 hover:scale-[1.02] transition-all duration-300 group border border-[#4E9188]/15 bg-white/40 hover:bg-[#4E9188]/5 hover:border-[#4E9188]/25"
                       >
                         <div className="flex items-center justify-between gap-3">
                           <div className="flex items-center gap-3 flex-1">
-                            <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 bg-white/20">
+                            <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-all duration-300 bg-[#4E9188]/8">
                               <product.icon
                                 size={20}
-                                className="text-white"
+                                className="text-[#4E9188]"
                               />
                             </div>
                             <div className="flex-1">
-                              <h4 className="text-xl font-bold font-sans text-white">
+                              <h4 className="text-lg font-bold font-sans text-[#233238]">
                                 {product.name}
                               </h4>
                             </div>
                           </div>
                           <button
                             onClick={() => openModal(product.name, product.description)}
-                            className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 hover:scale-110 transition-transform bg-white/20 hover:bg-white/30 text-white"
+                            className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 hover:scale-110 transition-transform bg-[#4E9188]/10 hover:bg-[#4E9188]/20 text-[#4E9188]"
                             aria-label="Mehr Informationen"
                           >
                             <Info size={16} />
