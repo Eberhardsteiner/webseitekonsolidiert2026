@@ -59,16 +59,15 @@ const networkPartners: NetworkPartner[] = [
     },
   },
   {
+    name: 'Verena Jobst Coaching',
+    topics: ['Coaching'],
+    
+  },
+  {
     name: 'Prof. Dr. Matthias Spörrle',
     topics: ['Psychologie', 'KI'],
       },
-  {
-    name: 'Ralf Wittmann',
-    topics: ['Erfolgreiches Arbeiten im Homeoffice'],
-    website: {
-      url: 'https://p3-consult.com/',
-    },
-  },
+  
 ];
 
 function TopicBadges({ topics }: { topics: string[] }) {
