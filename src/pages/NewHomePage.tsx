@@ -288,14 +288,9 @@ function NewHomePage() {
       )}
 
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center pointer-events-none md:bg-center sm:bg-[center_top]"
-          style={{ backgroundImage: 'url(/img/hero_composite_v3.png)' }}
-        />
-
-        <div className="absolute inset-0 bg-[#101420]/40"></div>
-
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(13,148,136,0.08)_0%,transparent_60%)]"></div>
+        <div className="absolute inset-0 bg-[#101420]">
+          <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_25%_75%,rgba(13,148,136,0.1)_0%,transparent_55%),radial-gradient(ellipse_at_75%_25%,rgba(217,119,6,0.06)_0%,transparent_50%)]"></div>
+        </div>
 
         <div className="relative z-10 px-md py-3xl w-full">
           <div className="max-w-3xl mx-auto text-center mb-2xl">
